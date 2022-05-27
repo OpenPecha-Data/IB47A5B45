@@ -1,0 +1,1472 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Bibliotheca Polyglotta</title>
+<link rel='stylesheet' type='text/css' href='css/bp.css'>
+<link rel='stylesheet' type='text/css' href='css/diac_doc.css'>
+
+<link rel='stylesheet' type='text/css' href='css/imageGallery.css'>
+<link rel='stylesheet' type='text/css' href='css/ss.css'>
+	      <link rel='stylesheet' type='text/css' href='css/tree_menu.css'>
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<!--  <script type="text/javascript" src="js/jqModal.js"></script>-->
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/tree_menu.js"></script>
+<!-- <script src="js/analytics_tracking.js" type="text/javascript"></script> -->
+
+
+<!-- <script type="text/javascript" src="js/popupDivhandling.js"></script> -->
+<!--  <script type="text/javascript" src="jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery-imagegallery.js"></script>-->
+</head>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//vrtx.uio.no/js/analytics/v2/analytics.js','ga');
+
+ga('create', 'UA-86407471-1', 'auto');
+ga(function(tracker) {
+
+	// Modifies sendHitTask to hit ipproxy instead of http://www.google-analytics.com directly
+	tracker.set('sendHitTask', function(model) {
+		payload = model.get('hitPayload');
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', '//w3prod-ipproxy.uio.no/collect' +'?' + payload, true);
+		xhr.send();
+	});
+		ga('send', 'pageview');
+});
+</script>
+<body><div class='banner'></div><!-- banner --><div class='uiologo'>
+<a href='http://www.hf.uio.no/'><img src='https://www2.hf.uio.no/polyglotta/hfe.png' border='0'></a></div><!-- uiologo --><div class='clear'></div>
+<div class='smule_tittel'>
+<div class='brodsmuleboks'>You are here: <a href='/polyglotta/index.php' accesskey='1'> BP HOME</a> >  <a href='/polyglotta/index.php?page=library&amp;bid=2' accesskey='1'>TLB</a> > <a href='/polyglotta/index.php
+	?page=volume&amp;vid=1109' accesskey='1'>MSV 6,09: Māṇavikā</a> > fulltext</div><div class='clear'></div>
+<div class='headline'>MSV 6,09: Māṇavikā<div class='clear'></div></div><!-- headline -->
+</div><!-- smule_tittel -->
+<!--<div>-->
+
+<h2 class="trigger" id="tr_lang"><a  href="#">Choose languages</a></h2>
+<h2 class="trigger" id="tr_img"><a  href="#">Choose images, etc.</a></h2>
+
+
+<div id="toggle_container_lan">
+
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_lan.php" method="POST">
+
+<div style="float:left; width:auto; text-align:left; margin-left:20px;">
+<h5>Choose languages</h5>
+<ul>
+<input value="Choose all" type="button" onClick="markAll('tr')"><input value="Uncheck all" type="button" onClick="markNone('tr')">
+
+	<li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_1109[5510]" value="5510" id="lancheckbox" checked >Tibetan: Kj ’dul ba pa</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_1109[5512]" value="5512" id="lancheckbox" checked >Chinese: T 1435, Puṇyatara & Kumārajīva 5CE</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_1109[5513]" value="5513" id="lancheckbox" checked >Chinese: T 1441, Saṅghavarman, 5CE</label></li><div style="clear:both"></div>
+<input type='submit' name='set_cookie' value='Save view'>
+<div style="clear:both"></div>
+
+</ul>
+<input type="hidden" name="vid" value="1109">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+</div>
+
+<div id="toggle_container_img">
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_img.php" method="POST">
+
+<div style="float:left; width:auto; text-align: left;">
+<h5>Choose display</h5>
+<ul>
+		
+	<li> 
+		<input type='checkbox' name='bilder' checked="checked" > Enable images
+	</li>
+	<li> 
+	<input type='checkbox' onclick="onOffCheckbox();" name='fotnoter' checked="checked"> Enable footnotes
+	<div id="pff" style="display:block" >
+	<ul>
+	<li><input type='radio' name='fotnote_valg'  value='show_a' checked> Show all footnotes</li>
+	<li><input type='radio' name='fotnote_valg'  value='show_h'  > Minimize footnotes</li>
+	</ul>
+	</li>
+	
+	</div>
+	<div style="float:left; width:20em; text-align: left; margin-left:120px ">
+	<div style="clear:both"></div>
+	<input type='submit' name='set_cookie' value='Save view'>
+	<div style="clear:both"></div>
+	</div>
+	
+</ul>
+<input type="hidden" name="vid" value="1109">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+	
+
+
+
+</div>
+</div>
+
+<div class='sok'><form name='Sok' id='FormBlock' action='/polyglotta/index.php' method='get'>
+<input type='hidden' name='page' value='search'>
+<input type='hidden' name='bid' value='2'>
+<input type='hidden' name='vid' value='1109'>
+<div class='sokeboks'>
+<input name='sokefelt' id='sokeboks' type='text' size='30' value=''>
+<input type='submit' name='Sok' value='Search' id='nsubmit'>
+<div class='clear'></div><a class="diacbutton" id="diacbutton" href="#">Diacritica</a><a id="diac2button" class="diac2button"  href="#">Diacritica-help</a><a class="s2button" href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation:SearchHelp">Search-help</a><div class='diacritical' id='diacritical_sign'><div style="text-align: left; ">
+<table class = 'diacritica' width="200" border="1" cellpadding="1" cellspacing="1" id="diacritical">
+    <tbody>
+        <tr>
+            <td style="text-align: center; ">ā</td>
+            <td style="text-align: center; ">ī</td>
+            <td style="text-align: center; ">ū</td>
+            <td style="text-align: center; ">ṛ</td>
+            <td style="text-align: center; ">ṝ</td>
+            <td style="text-align: center; ">ḷ</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ḹ</td>
+            <td style="text-align: center; ">&rsquo;</td>
+            <td style="text-align: center; ">ṃ</td>
+            <td style="text-align: center; ">ḥ</td>
+            <td style="text-align: center; ">ṅ</td>
+            <td style="text-align: center; ">&ntilde;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ṭ</td>
+            <td style="text-align: center; ">ḍ</td>
+            <td style="text-align: center; ">ṇ</td>
+            <td style="text-align: center; ">ṣ</td>
+            <td style="text-align: center; ">ś</td>
+            <td style="text-align: center; ">ź</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">&scaron;</td>
+            <td style="text-align: center; ">č</td>
+            <td style="text-align: center; ">ǰ</td>
+            <td style="text-align: center; ">&gamma;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+</div></div><!-- diacritical --><div id="ex3a" class="jqmDialog"><div>
+	<span style="font-size:12px;">Note on the transliteration:</span></div>
+<div>
+	<span style="font-size:12px;">The transliteration system of the BP/TLB is based on the Unicode/UTF-8 system. However, there may be difficulties with some of the letters &ndash; particularly on PC/Windows-based systems, but not so much on the Mac. We have chosen the most accepted older and traditional systems of transliteration against, e.g, Wylie for Tibetan, since with Unicode it is possible, in Sanskrit and Tibetan, etc., to represent one sound with one letter in almost all the cases (excepting Sanskrit and Tibetan aspirated letters, and Tibetan tsa, tsha, dza). We thus do not use the Wylie system which widely employs two letters for one sound (ng, ny, sh, zh etc.).</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">Important:</span></div>
+<div>
+	<span style="font-size:12px;">We ask you in particular to note the use of the &rsquo; apostrophe and not the &#39; representing the avagrāha in Sanskrit, and most important the &rsquo;a-chuṅ in Tibetan. On the Mac the &rsquo; is Alt-M.</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">If you cannot find the letters on your key-board, you may click on the link &quot;Diacritica&quot; to access it for your search.</span></div>
+</div><!-- diacritical_doc --><div class='clear'></div><select name='searchmode'><option selected value='phrase'>Search for exact phrase</option>
+<option  value='phraseregex'>Search for exact phrase (regex)</option>
+<option  value='word'>Search for every word in one record</option>
+<option  value='free'>Search for every word fragment in one record</option>
+</select>
+<select name='context'>
+<option ($_GET[context]=="a" ? "selected" : "") value="a"> Search in all libraries</option><option selected value="bTLB">Search in TLB</option><option selected value="v1109">Search in MSV 6,09: Māṇavikā</option></select><div class='clear'></div><a class='sbutton' href='/polyglotta/index.php?page=asearch&amp;bid=2&amp;vid=1109'>Choose specific texts..</a><div class='clear'></div></div></form></div><!-- sok --><div class='clear'></div><!-- clear --><div id='dcr' class='divControlRead'><div class='venstrefulltekstfelt'><div class='bverknavn'><a href='/polyglotta/index.php?page=volume&amp;vid=1109'>MSV 6,09: Māṇavikā</a></div><table class="tlvl2">
+					<tr>
+						<td bgcolor="#ffffff"> &nbsp; &nbsp;
+						<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_7627.Verses41-58" border=0 hspace=2>
+						<a href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=1109" class="ajax_tree0">Complete text</a>
+						</td>
+					</tr>
+				  </table><input type="hidden" name="tree_top_options" id="tree_top_options" value="120197.Māṇavikā|">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_120197.Māṇavikā" border=0 hspace=2><a id="href_120197.Māṇavikā" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=1109&mid=1923461&level=1&cid=824845" class="ajax_tree0">Māṇavikā
+</td></tr></table>
+<script language=javascript>test('120197.Māṇavikā|')</script><div class='bverknavn'><a href='/polyglotta/index.php?page=library&amp;bid=2'>Back to library</a></div></div><!-- venstrefulltekstfelt --><div class="clear"></div><!-- clear --><div id="nav-menu"><ul>
+  		  <li  id="nav-1"><a class="tabValgt" href="/polyglotta/index.php?page=record&amp;view=record&amp;vid=1109&amp;mid=1923461&amp;level=1">Sentence by sentence view</a></li>
+  		  <li  id="nav-2"><a  href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=1109&amp;cid=824845&amp;mid=1923461&amp;level=1">Continuous text view</a></li>
+ 		<li  id="nav-3"><a  href="/polyglotta/admin/index.php?page=fulltext&amp;view=fulltext&amp;vid=1109&amp;cid=824845&amp;mid=1923461&amp;level=1">View in admin</a></li>
+
+  		  </ul></div><div class='clear'></div><!-- clear -->			<script language="javascript" type="text/javascript">
+			var kilderef = '';
+			var tekstid = 0;
+			var tekstid_bilder = 0;
+			var filsti = '';
+			var thumbnail = '';
+			</script>
+		<div class='infofulltekstfelt'><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><div class='kilderef' id='7600366'></div><div class='clear'></div><span id='7600366bi' class='paragraph'>
+							[Māṇavikā]<br />(221b5) ’dul ba gźuṅ dam pa | bam po bźi bcu rtsa drug pa |&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><div class='kilderef' id='7601100'></div><div class='clear'></div><span id='7601100bi' class='paragraph'>
+							問雜事初&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><div class='kilderef' id='7601467'></div><div class='clear'></div><span id='7601467bi' class='paragraph'>
+							薩婆多部毘尼摩得勒伽卷第七<br/> 宋元嘉年僧伽跋摩譯&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600367bi' class='paragraph'>
+							ma na bi ka’i mdo'i mdo bsdus pa ste |<br />’dus pa bu ram chu daṅ ruṅ ba gñis ||<br />(6) śa daṅ srin bu pad pa rnam pa lṅa ||<br />sra dro ba daṅ phyin lan byas pa daṅ ||<br />myos pa dge bsñen na ba dge sloṅ ba’o ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601101bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601468bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600368bi' class='paragraph'>
+							mdor na |<br />’dus pa daṅ ni ’on pa daṅ ||<br />dmus loṅ daṅ yaṅ ri mo can ||<br />gźon pa rnams ni ma gtogs te ||<br />lhag ma rnams ni ruṅ ba’o ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601102bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601469bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600369bi' class='paragraph'>
+							saṅs (7) rgyas bcom ldan ’das la tshe daṅ ldan pa u pā lis źus pa | btsun pa bcom ldan ’das kyis yul mtha’ ’khob tu ’dul ba ’dzin pa daṅ lṅas bsñen par rdzogs par ruṅ ṅo źes bka’ stsal na | der bcu yod pa las ’dul ba ’dzin pa daṅ lṅas bsñen par rdzogs (222a1) par bgyis na bsñen par rdzogs pa źes bgyi’am bsñen par ma rdzogs pa źes bgyi |&nbsp;</span><span id='7600370bi' class='paragraph'>
+						 u pā li de ni dge sloṅ du bsñen par rdzogs pa źes bya ste | dge ’dun rnams ni ’das pa daṅ bcas par ’gyur ro ||&nbsp;</span><span id='7600371bi' class='paragraph'>
+						 btsun pa bcom ldan ’das kyis chos (2) gos rñed la źag bcu las ’das na spaṅ ba’i ltuṅ bar ’gyur źes bka’ stsal na | ji tsam gyis na ’on pas chos gos ’thob par ’gyur |&nbsp;</span><span id='7600372bi' class='paragraph'>
+						 gaṅ gi tshe rñed pa na mthoṅ la lag pas reg gam paṅ du blaṅs par yaṅ gyur la ’di ni bdag gi gos so sñam du des ’du śes (3) bskyed pa de lta bu ni ’on pas gos thob par gyur pa’o ||&nbsp;</span><span id='7600373bi' class='paragraph'>
+						 ji tsam gyis na dmus loṅ gis gos thob par gyur ||&nbsp;</span><span id='7600374bi' class='paragraph'>
+						 gaṅ gi tshe des thos la lag tu blaṅs sam paṅ du blaṅs par gyur la ’di ni bdag gi gos so sñam du des ’du śes kyaṅ bskyed na de lta bu ni dmus loṅ gis gos thob (4) par gyur pa’o ||&nbsp;</span><span id='7600375bi' class='paragraph'>
+						 saṅs rgyas bcom ldan ’das la u pā lis źus pa | phyed ri mo bris la phyed ri mo ma bris pa la mchis su ruṅ ṅam |&nbsp;</span><span id='7600376bi' class='paragraph'>
+						 u pā li mi ruṅ ste | de’i steṅ du gdiṅ ba gźan yod dam | de ste rñiṅs par gyur na ruṅ ṅo ||&nbsp;</span><span id='7600377bi' class='paragraph'>
+						 btsun pa bcom ldan ’das kyis ba la ’jus (5) te kluṅ ma rgal cig ces bka’ stsal pa | bźon pa ma gtogs par gźan la ’ju źiṅ kluṅ rgal du gnaṅ ṅam |&nbsp;</span><span id='7600378bi' class='paragraph'>
+						 gnaṅ ste | glaṅ ṅam | rta’am | ma he’am | g-yag la ’jus śiṅ kluṅ rgal na ñes pa med do ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601103bi' class='paragraph'>
+							優波離問佛。如佛所説。邊地人持律第五得受具戒。頗有十人但取五人。得名受具戒不。&nbsp;</span><span id='7601104bi' class='paragraph'>
+						 答得名受具戒。與受具戒者得罪。&nbsp;</span><span id='7601105bi' class='paragraph'>
+						 問聾人云何名得布施。&nbsp;</span><span id='7601106bi' class='paragraph'>
+						 答若眼見若盲人。若著手中若著膝上。心生念。我得是物。&nbsp;</span><span id='7601107bi' class='paragraph'>
+						 &nbsp;</span><span id='7601108bi' class='paragraph'>
+						 See the previous record (two records ahead)&nbsp;</span><span id='7601109bi' class='paragraph'>
+						 問若坐臥具上。若織若畫作女人像。若半有半無。得坐臥不。&nbsp;</span><span id='7601110bi' class='paragraph'>
+						 答不得。不犯者。若多壞若敷尼師壇坐。&nbsp;</span><span id='7601111bi' class='paragraph'>
+						 問捉牸牛尾。得渡河不。答不得。問除牸牛。若捉餘畜生尾。得渡河不。&nbsp;</span><span id='7601112bi' class='paragraph'>
+						 答若捉師子虎狼象特牛驢馬尾者。得捉渡河。&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601470bi' class='paragraph'>
+							如佛所説。邊地律師五人受具戒。若有十人律師五人受戒。得戒不。&nbsp;</span><span id='7601471bi' class='paragraph'>
+						 佛言。得具戒。諸比丘得呵罪。&nbsp;</span><span id='7601472bi' class='paragraph'>
+						 如佛所説。過十夜衣。尼薩耆。云何得長衣。&nbsp;</span><span id='7601473bi' class='paragraph'>
+						 謂若入手若在膝上肩上作想。此是我衣。&nbsp;</span><span id='7601474bi' class='paragraph'>
+						 &nbsp;</span><span id='7601475bi' class='paragraph'>
+						 See the previous record (two records ahead)&nbsp;</span><span id='7601476bi' class='paragraph'>
+						 比丘得眠上座臥不。&nbsp;</span><span id='7601477bi' class='paragraph'>
+						 佛言。應敷臥具已坐臥故者。不犯。&nbsp;</span><span id='7601478bi' class='paragraph'>
+						 如世尊所説。不得捉牛尾渡。得捉餘尾渡不。&nbsp;</span><span id='7601479bi' class='paragraph'>
+						 佛言。除虎尾象馬師子尾。捉餘尾渡。不犯&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600379bi' class='paragraph'>
+							mdor na |<br />bu ram śiṅ daṅ źag bdun daṅ ||<br />lan tshwa daṅ (6) ni ’bru mar ruṅ ||<br />dge sloṅ gis ni ruṅ bar byas ||<br />mi ruṅ sar ni mi ruṅ ba’o ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601113bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601480bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600380bi' class='paragraph'>
+							saṅs rgyas bcom ldan ’das la tshe daṅ ldan pa u pā lis źus pa | btsun pa bu ram chaṅ źag bdun du byin gyis brlab tu ruṅ ṅam |&nbsp;</span><span id='7600381bi' class='paragraph'>
+						 u pā li ruṅ ṅo || ji srid du btuṅ bar bgyi | nam myos (7) par mi ’gyur ba daṅ | zas daṅ ma ’dres pa daṅ | ma rñogs pa daṅ | bsṅal bar ma gyur ciṅ | ñid kyi blo las ma gyur pa’o ||&nbsp;</span><span id='7600382bi' class='paragraph'>
+						 saṅs rgyas bcom ldan ’das la tshe daṅ ldan pa u pā lis źus pa | btsun pa mi ruṅ ba’i tshil las lan tshwa btsos te ’tshal du ruṅ ṅam |&nbsp;</span><span id='7600383bi' class='paragraph'>
+						 u pā li (222b1) mi ruṅ ṅo || thal bar ruṅ bar byas te | zos na ñes pa med do ||&nbsp;</span><span id='7600384bi' class='paragraph'>
+						 btsun pa mi ruṅ ba’i sman las ’bru mar btsos pa ’tshal du ruṅ ṅam |&nbsp;</span><span id='7600385bi' class='paragraph'>
+						 u pā li mi ruṅ ste | mig gam | rna ba’am | sna la bskus na ñes pa med do ||&nbsp;</span><span id='7600386bi' class='paragraph'>
+						 dge sloṅ raṅ gis me’am mtshon nam sen mos sa (2) bon du ’gyur ba rnam pa lṅa po ruṅ bar bgyis na ruṅ bar bgyis pa źes bgyi’am | ’tshal du ruṅ ṅam&nbsp;</span><span id='7600387bi' class='paragraph'>
+						 ruṅ ste mes ruṅ bar bya ba ma gtogs te || gaṅ ruṅ bar byed pa de la ni sa bon ma ruṅ bar byas pa’i ñes pa ’byuṅ bar ’gyur ro ||&nbsp;</span><span id='7600388bi' class='paragraph'>
+						 mi ruṅ ba’i sar śiṅ skyes la ruṅ ba’i sar ’bras bu (3) ltuṅ na ’tshal du ruṅ ṅam |&nbsp;</span><span id='7600389bi' class='paragraph'>
+						 u pā li mi ruṅ ṅo ||&nbsp;</span><span id='7600390bi' class='paragraph'>
+						 ruṅ ba’i sar śiṅ skyes la mi ruṅ ba’i sar ’bras bu ltuṅ na ’tshal du ruṅ ṅam |&nbsp;</span><span id='7600391bi' class='paragraph'>
+						 u pā li ruṅ ste | źag ma lon par gyur pa’o ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601114bi' class='paragraph'>
+							問受石蜜漿。擧宿經七日。糝雜得服不。&nbsp;</span><span id='7601115bi' class='paragraph'>
+						 答若雜餘糝不得。&nbsp;</span><span id='7601116bi' class='paragraph'>
+						 問不淨藥草著油中煮。得服不。答不得。若病人塗身手足灌鼻無罪。問若以不淨脂煮鹽。得食不。答病人若燒得服。&nbsp;</span><span id='7601117bi' class='paragraph'>
+						 See the previous record&nbsp;</span><span id='7601118bi' class='paragraph'>
+						 See the previous record (two records ahead)&nbsp;</span><span id='7601119bi' class='paragraph'>
+						 See the previous record (three records ahead)&nbsp;</span><span id='7601120bi' class='paragraph'>
+						 問比丘以火刀爪淨果。得食不。&nbsp;</span><span id='7601121bi' class='paragraph'>
+						 答不得。&nbsp;</span><span id='7601122bi' class='paragraph'>
+						 問若果樹在淨地。枝在不淨地。果墮是中。可食不。答不可食。若果樹在不淨地。枝在淨地。果墮是中。可食不。答可食。&nbsp;</span><span id='7601123bi' class='paragraph'>
+						 See the previous record&nbsp;</span><span id='7601124bi' class='paragraph'>
+						 See the previous record (two record ahead)&nbsp;</span><span id='7601125bi' class='paragraph'>
+						 佛語諸比丘。從今日不聽汝作淨地羯磨。若作得突吉羅。從是語已捨是事也&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601481bi' class='paragraph'>
+							糖漿得七日受不。&nbsp;</span><span id='7601482bi' class='paragraph'>
+						 答得飮。幾時飮。乃至未捨自性。&nbsp;</span><span id='7601483bi' class='paragraph'>
+						 以不淨藥合煮得噉不。答不得。得塗身塗瘡灌鼻。以不淨脂合鹽煮得噉不。&nbsp;</span><span id='7601484bi' class='paragraph'>
+						 答不得。若當猪脂用不犯&nbsp;</span><span id='7601485bi' class='paragraph'>
+						 &nbsp;</span><span id='7601486bi' class='paragraph'>
+						 See the previous record (three records ahead)&nbsp;</span><span id='7601487bi' class='paragraph'>
+						 若比丘五種種子自手作淨。若刀若爪成淨不。(See the next record as well)&nbsp;</span><span id='7601488bi' class='paragraph'>
+						 答成淨。得食不。得食。除火淨。若火淨殺草。得波夜提。&nbsp;</span><span id='7601489bi' class='paragraph'>
+						 樹在不淨地。果落淨地得食不。不經宿得食。樹在淨地果落不淨地。得食不。&nbsp;</span><span id='7601490bi' class='paragraph'>
+						 答不得。&nbsp;</span><span id='7601491bi' class='paragraph'>
+						 樹在淨地果落不淨地。得食不。&nbsp;</span><span id='7601492bi' class='paragraph'>
+						 答不得。&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600392bi' class='paragraph'>
+							mdor na |<br />ruṅ bar ’gyur ba’i sa gñis te ||<br />bza’ bar bya ba ma yin daṅ ||<br />mi yi ’o mar rig (4) pa daṅ ||<br />skyur po khu bar gyur pa’o ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601126bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601493bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600393bi' class='paragraph'>
+							ruṅ ba’i sa na sa bon rnam pa lṅa po daṅ me mchis la mi ruṅ ba’i sar ruṅ ba bgyid pa mchis te | me’am mtshon tam sen mos ruṅ bar bgyis na ruṅ bar bgyis pa źes bgyi’am ma bgyis pa źes bgyi | byas pa źes bya’o || ’tshal du ruṅ ṅam | (5) u pā li mi ruṅ ṅo ||&nbsp;</span><span id='7600394bi' class='paragraph'>
+						 ruṅ ba’i sa na dge sloṅ mchis te | ruṅ ba'i sar sa bon rnam pa lṅa po la me'am mtshon tam sen mos ruṅ bar bgyis na bgyis pa źes bgyi'am | ma bgyis pa źes bgyi | byas pa źes bya'o || 'tshal du ruṅ ṅam |&nbsp;</span><span id='7600395bi' class='paragraph'>
+						 u pā li ruṅ ste<a class='fotnote cn' name='FN5510cn1' href='#N5510cn1'><sup>1</sup></a>
+  | mes mi ruṅ bar byas pa ma (6) gtogs te | gaṅ ruṅ bar byed pa la sa bon gyi groṅ bśig pa’i ñes par ’gyur ro ||&nbsp;</span><span id='7600396bi' class='paragraph'>
+						 khur blaṅ ṅam | ma bsregs pa’am | khre’u’am | slo ma’i naṅ du bźag ste ’tshal du ruṅ ṅam |&nbsp;</span><span id='7600397bi' class='paragraph'>
+						 u pā li mi ruṅ ṅo ||<a class='fotnote cn' name='FN5510cn2' href='#N5510cn2'><sup>2</sup></a>
+&nbsp;</span><span id='7600398bi' class='paragraph'>
+						 mi’i ’o ma ’tshal du ruṅ ṅam |&nbsp;</span><span id='7600399bi' class='paragraph'>
+						 u pā li mi ruṅ ste | mig sman du dgos pa ni (7) ma gtogs so ||&nbsp;</span><span id='7600400bi' class='paragraph'>
+						 dus ma lags par skyur po’i khu ba ’tshal du ruṅ ṅam |&nbsp;</span><span id='7600401bi' class='paragraph'>
+						 u pā li ruṅ ṅo ||&nbsp;</span><div style='' id='1' class='note cn'>1.<a class="internt" name='N5510cn1' href='#FN5510cn1'> mi ruṅ ste DQ: ruṅ ste: SV, and Chinese in the previous record.</a>&nbsp; 2.<a class="internt" name='N5510cn2' href='#FN5510cn2'> ruṅ ṅo DQ: mi ruṅ ṅo SV.</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601127bi' class='paragraph'>
+							&nbsp;</span><span id='7601128bi' class='paragraph'>
+						 &nbsp;</span><span id='7601129bi' class='paragraph'>
+						 &nbsp;</span><span id='7601130bi' class='paragraph'>
+						 問諸大小槃團槃机案上。得食不。&nbsp;</span><span id='7601131bi' class='paragraph'>
+						 答不得食。&nbsp;</span><span id='7601132bi' class='paragraph'>
+						 問人乳得飮不。&nbsp;</span><span id='7601133bi' class='paragraph'>
+						 答不得。若病以洗瘡塗眼得。&nbsp;</span><span id='7601134bi' class='paragraph'>
+						 &nbsp;</span><span id='7601135bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601494bi' class='paragraph'>
+							淨人在不淨地。不淨地作淨成淨不。答成淨。得食不。得食。除火淨&nbsp;</span><span id='7601495bi' class='paragraph'>
+						 淨人在不淨地。淨地作淨。成淨不。成淨。得食不。得食。除火淨。&nbsp;</span><span id='7601496bi' class='paragraph'>
+						 See the previous record&nbsp;</span><span id='7601497bi' class='paragraph'>
+						 得食鱔肉不。<a class='fotnote cn' name='FN5513cn1' href='#N5513cn1'><sup>1</sup></a>
+&nbsp;</span><span id='7601498bi' class='paragraph'>
+						 不得。&nbsp;</span><span id='7601499bi' class='paragraph'>
+						 得飮人乳不。&nbsp;</span><span id='7601500bi' class='paragraph'>
+						 不得。&nbsp;</span><span id='7601501bi' class='paragraph'>
+						 得著眼中蘇毘羅漿。非時得飮不。病者得飮。&nbsp;</span><span id='7601502bi' class='paragraph'>
+						 &nbsp;</span><div style='' id='2' class='note cn'>1.<a class="internt" name='N5513cn1' href='#FN5513cn1'> It seems a misreading of the original text. Here T1441 is the question for the flesh of eel.</a>&nbsp; </div><div class='clear'></div></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600402bi' class='paragraph'>
+							mdor na |<br />mi yi śa daṅ ched du ni ||<br />bsad par gyur par śes pa daṅ ||<br />mi ruṅ ba yi śa rnams daṅ ||<br />’di rnams kun ni bza’ mi bya ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601136bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601503bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600403bi' class='paragraph'>
+							saṅs rgyas bcom ldan ’das la tshe daṅ ldan (223a1) pa u pā lis źus pa | btsun pa mi’i śa ’tshal du ruṅ ṅam |&nbsp;</span><span id='7600404bi' class='paragraph'>
+						 u pā li mi ruṅ ṅo || btsun pa noṅs pa cir ’gyur ñes pa sbom po’o ||&nbsp;</span><span id='7600405bi' class='paragraph'>
+						 mi’i śa ma gtogs par de las ruṅ ba gźan rnams de’i phyir ched du bsad pa’i śa ’tshal du ruṅ ṅam ||&nbsp;</span><span id='7600406bi' class='paragraph'>
+						 u pā li mi (2) ruṅ ṅo ||&nbsp;</span><span id='7600407bi' class='paragraph'>
+						 mi ruṅ ba’i śa rnams ’tshal du ruṅ ṅam | u pā li mi ruṅ ṅo ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601137bi' class='paragraph'>
+							問人肉得食不。&nbsp;</span><span id='7601138bi' class='paragraph'>
+						 答不得。若食得偸蘭遮。&nbsp;</span><span id='7601139bi' class='paragraph'>
+						 問故爲殺畜生肉可食不。&nbsp;</span><span id='7601140bi' class='paragraph'>
+						 答不得食。若食得突吉羅。&nbsp;</span><span id='7601141bi' class='paragraph'>
+						 不淨鳥獸肉不應食。若食突吉羅。&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601504bi' class='paragraph'>
+							一切不淨肉不得食。得食人肉不。&nbsp;</span><span id='7601505bi' class='paragraph'>
+						 不得食。食者得何罪。犯偸羅遮。&nbsp;</span><span id='7601506bi' class='paragraph'>
+						 &nbsp;</span><span id='7601507bi' class='paragraph'>
+						 &nbsp;</span><span id='7601508bi' class='paragraph'>
+						 除人肉。餘不淨肉得食不。不得食&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600408bi' class='paragraph'>
+							mdor na |<br />srin bu pad pa daṅ ni śiṅ sta<a class='fotnote cn' name='FN5510cn3' href='#N5510cn3'><sup>3</sup></a>
+  daṅ ||<br />spal pa’aṅ bza’ bar mi bya ste ||<br />gzugs pa de dag thams cad ni ||<br />bza’ bar bya ba ma yin no ||&nbsp;</span><div style='' id='3' class='note cn'>3.<a class="internt" name='N5510cn3' href='#FN5510cn3'> rta daṅ DQS: sta daṅ V.</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601142bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601509bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600409bi' class='paragraph'>
+							saṅs rgyas bcom ldan ’das la tshe (3) daṅ ldan pa u pā lis źus pa | srin bu pad pa’i śa ’tshal du ruṅ ṅam | u pā li mi ruṅ ṅo ||&nbsp;</span><span id='7600410bi' class='paragraph'>
+						 bya śiṅ sta mo’i śa ’tshal du ruṅ ṅam | u pā li mi ruṅ ṅo ||&nbsp;</span><span id='7600411bi' class='paragraph'>
+						 sbal pa’i śa ’tshal du ruṅ ṅam | u pā li mi ruṅ ṅo ||&nbsp;</span><span id='7600412bi' class='paragraph'>
+						 gzugs pa dag gi śa ’tshal du ruṅ ṅam | u pā li mi (4) ruṅ ṅo ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601143bi' class='paragraph'>
+							See the following record (two records in the following)&nbsp;</span><span id='7601144bi' class='paragraph'>
+						 燕<a class='fotnote cn' name='FN5512cn1' href='#N5512cn1'><sup>1</sup></a>
+ 肉不應食。若食突吉羅。鵄鷲鳥等肉不應食。若食突吉羅。&nbsp;</span><span id='7601145bi' class='paragraph'>
+						 蝦蟆肉不應食。若食得突吉羅。水蛭不應食。若食得突吉羅。&nbsp;</span><span id='7601146bi' class='paragraph'>
+						 &nbsp;</span><div style='' id='4' class='note cn'>1.<a class="internt" name='N5512cn1' href='#FN5512cn1'> In Taisho, 燕+鳥</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601510bi' class='paragraph'>
+							云何不淨肉。謂鱔蛇蝦蟇烏鵲白鷺。如是等肉不得食。食者突吉羅。&nbsp;</span><span id='7601511bi' class='paragraph'>
+						 See the previous record&nbsp;</span><span id='7601512bi' class='paragraph'>
+						 See the previous record&nbsp;</span><span id='7601513bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600413bi' class='paragraph'>
+							mdor na |<br />ruṅ ba dag daṅ ’dres pa daṅ ||<br />źag bdun du yaṅ bza’ mi bya ||<br />tshil bu daṅ yaṅ de bźin te ||<br />bu ram śiṅ daṅ sṅa dror sbyar ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601147bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601514bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600414bi' class='paragraph'>
+							saṅs rgyas bcom ldan ’das la tshe daṅ ldan pa u pā lis źus pa | sṅa dro ba’i sman daṅ phyi dro ba’i sman du bsres (5) na ’tshal du ruṅ ṅam | u pā li mi ruṅ ṅo ||&nbsp;</span><span id='7600415bi' class='paragraph'>
+						 phyi dro ba daṅ bdun par bsres na ’tshal du ruṅ ṅam | u pā li mi ruṅ ṅo ||&nbsp;</span><span id='7600416bi' class='paragraph'>
+						 bdun pa daṅ nam ’tsho’i bar du bsres na ruṅ ṅam | u pā li mi ruṅ ṅo ||&nbsp;</span><span id='7600417bi' class='paragraph'>
+						 &nbsp;</span><span id='7600418bi' class='paragraph'>
+						 btsun pa de ñid sṅa dro ba lags la de ñid phyi dro ba daṅ bdun pa daṅ | nam (6) ’tsho’i bar du ruṅ ṅam |&nbsp;</span><span id='7600419bi' class='paragraph'>
+						 u pā li ruṅ ste<a class='fotnote cn' name='FN5510cn4' href='#N5510cn4'><sup>4</sup></a>
+<a class='fotnote cn' name='FN5510cn5' href='#N5510cn5'><sup>5</sup></a>
+  | bu ram śiṅ ni sṅa dro ba la | de’i ’og tu khu ba btsir ba ni phyi dro pa’o || de’i ’og tu khu ba bskol te bu ram du byas pa ni bdun pa’o || de’i ’og tu bdun pa bsregs pa ni nam ’tsho’i bar du ba’o ||&nbsp;</span><div style='' id='5' class='note cn'>4.<a class="internt" name='N5510cn4' href='#FN5510cn4'> ruṅ ste DQ: mi ruṅ ste SV.</a>&nbsp; 5.<a class="internt" name='N5510cn5' href='#FN5510cn5'> Although SV is negative, they might follow the incorrect Sanskrit version</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601148bi' class='paragraph'>
+							即日受時藥時分藥七日藥盡形藥。共合一處。中前應服。時藥力故。過中不應服。&nbsp;</span><span id='7601149bi' class='paragraph'>
+						 即日受時分藥七日藥盡形藥。共合一處。時分應服。時分藥力故。過時分不應服。&nbsp;</span><span id='7601150bi' class='paragraph'>
+						 即日受七日藥盡形藥共合一處。七日應服。七日藥力故。過七日不應服。盡形藥隨意應服。&nbsp;</span><span id='7601151bi' class='paragraph'>
+						 昨日受時藥不淨。即日受時分藥七日藥盡形藥。共合一處不應服。昨日受時分藥不淨。即日受七日藥盡形藥。共合一處不應服。昨日受七日藥不淨。即日受盡形藥。共合一處不應服。盡形藥盡形應服。&nbsp;</span><span id='7601152bi' class='paragraph'>
+						 問頗有從一物邊作時藥時分藥七日藥盡形藥。&nbsp;</span><span id='7601153bi' class='paragraph'>
+						 答有。甘蔗是時藥清汁是時分藥。作石蜜是七日藥燒作灰是盡形藥<br/>酪是時藥。清汁如水是時分藥。作酥是七日藥。燒作灰是盡形藥。<a class='fotnote cn' name='FN5512cn2' href='#N5512cn2'><sup>2</sup></a>
+&nbsp;</span><div style='' id='6' class='note cn'>2.<a class="internt" name='N5512cn2' href='#FN5512cn2'> T1435 gives two examples</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601515bi' class='paragraph'>
+							即日受時藥七日藥終身藥。各各相雜得服不。不得服。時藥時服。乃至終身藥終身服&nbsp;</span><span id='7601516bi' class='paragraph'>
+						 See the previous record&nbsp;</span><span id='7601517bi' class='paragraph'>
+						 See the previous record&nbsp;</span><span id='7601518bi' class='paragraph'>
+						 &nbsp;</span><span id='7601519bi' class='paragraph'>
+						 時藥得作非時七日終身藥耶。&nbsp;</span><span id='7601520bi' class='paragraph'>
+						 廣説如前。&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600420bi' class='paragraph'>
+							de ñid la sṅa dro ba daṅ | de ñid (7) bdun pa daṅ | de ñid la nam ’tsho’i bar du bar ruṅ ṅam |&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601154bi' class='paragraph'>
+							See the following record&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601521bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600421bi' class='paragraph'>
+							ruṅ ste śa ni sṅa dro ba’o || de’i ’og tu btsos pa’i źag ni bdun pa’o || bdun pa de'i 'og tu bsregs pa'i thal ba ni nam 'tsho'i bar du ba'o ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601155bi' class='paragraph'>
+							胡麻<a class='fotnote cn' name='FN5512cn3' href='#N5512cn3'><sup>3</sup></a>
+ 是時藥。壓作油是七日藥。燒作灰是盡形藥。<br/>肉是時藥。煮取脂是七日藥。燒作灰是盡形藥。<a class='fotnote cn' name='FN5512cn4' href='#N5512cn4'><sup>4</sup></a>
+&nbsp;</span><div style='' id='7' class='note cn'>3.<a class="internt" name='N5512cn3' href='#FN5512cn3'> Skt. tilā in verse, T1435 contains this item appeared in the Skt version.</a>&nbsp; 4.<a class="internt" name='N5512cn4' href='#FN5512cn4'> T1432 gives two examples again.</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601522bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600422bi' class='paragraph'>
+							mdor na |<br />de ltar byin len byas pa daṅ ||<br />de yaṅ byin gyis ma brlabs (223b1) daṅ ||<br />nad pa nad kyis gzir ba daṅ ||<br />bsṅal ba’i btuṅ ba brgyad pa’o ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601156bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601523bi' class='paragraph'>
+							No Tibetan&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600423bi' class='paragraph'>
+							sṅa dro ba’i sman ’di dag gźag par byin gyis brlab tu ruṅ ṅam |&nbsp;</span><span id='7600424bi' class='paragraph'>
+						 u pā li mi ruṅ ste | de bźin du phyi dro ba daṅ | bdun pa daṅ | nam ’tsho’i bar du yaṅ mi ruṅ ṅo ||&nbsp;</span><span id='7600425bi' class='paragraph'>
+						 de bźin du byin len ma (2) byas pa daṅ | naṅ du btsos pa daṅ | blaṅs pa daṅ mi ruṅ ba’i rnams ’tshal du ruṅ ṅam | u pā li mi ruṅ ṅo ||&nbsp;</span><span id='7600426bi' class='paragraph'>
+						 tshul bźin pas blaṅs pa byin gyis ma brlabs pa de ’tshal du ruṅ ṅam | u pā li mi ruṅ ṅo ||&nbsp;</span><span id='7600427bi' class='paragraph'>
+						 &nbsp;</span><span id='7600428bi' class='paragraph'>
+						 slar blaṅs pa daṅ byin gyis ma brlabs pa mi na bar ’tshal du ruṅ (3) ṅam | u pā li mi ruṅ ṅo ||&nbsp;</span><span id='7600429bi' class='paragraph'>
+						 slar blaṅs pa daṅ byin gyis ma brlabs pa nad pas ’tshal du ruṅ ṅam | u pā li ruṅ ṅo<a class='fotnote cn' name='FN5510cn6' href='#N5510cn6'><sup>6</sup></a>
+||&nbsp;</span><div style='' id='8' class='note cn'>6.<a class="internt" name='N5510cn6' href='#FN5510cn6'> ruṅ ṅo DQ: mi ruṅ ṅo S: mi ruṅo V.</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601157bi' class='paragraph'>
+							問時藥時分七日盡形藥。是諸藥擧殘宿。得服不。&nbsp;</span><span id='7601158bi' class='paragraph'>
+						 答不得。&nbsp;</span><span id='7601159bi' class='paragraph'>
+						 &nbsp;</span><span id='7601160bi' class='paragraph'>
+						 &nbsp;</span><span id='7601161bi' class='paragraph'>
+						 問若比丘先自取。後從淨人邊受。可服不。答不得。&nbsp;</span><span id='7601162bi' class='paragraph'>
+						 問是藥手受口受。無病應服不。答不得。&nbsp;</span><span id='7601163bi' class='paragraph'>
+						 問若手受口受。病比丘得服不。答得服。&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601524bi' class='paragraph'>
+							若 藥不手受不説受不病得服不。不得服。<br/>時藥非時藥七日藥終身藥。不手受不説受。經宿得服不。<a class='fotnote cn' name='FN5513cn2' href='#N5513cn2'><sup>2</sup></a>
+&nbsp;</span><span id='7601525bi' class='paragraph'>
+						 不得服。&nbsp;</span><span id='7601526bi' class='paragraph'>
+						 &nbsp;</span><span id='7601527bi' class='paragraph'>
+						 &nbsp;</span><span id='7601528bi' class='paragraph'>
+						 已手受説受内宿得服不。不得服。手受説受病者得服&nbsp;</span><span id='7601529bi' class='paragraph'>
+						 &nbsp;</span><span id='7601530bi' class='paragraph'>
+						 See the previous record (two records ahead)&nbsp;</span><div style='' id='9' class='note cn'>2.<a class="internt" name='N5513cn2' href='#FN5513cn2'> This line is fit to others.</a>&nbsp; </div><div class='clear'></div></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600430bi' class='paragraph'>
+							de nas saṅs rgyas bcom ldan ’das la tshe daṅ ldan pa u pā lis źus pa | nad pa la ci stsal bar bgyi | gaṅ gis nad pa la sos par ’gyur ba bcas (4) pa’i kha na ma tho ba de nad pa la byin cig |&nbsp;</span><span id='7600431bi' class='paragraph'>
+						 bcom ldan ’das kyis btuṅ ba ni rnam pa ’di brgyad gnaṅ na de la rtsa ba’i bsṅal ba daṅ | sdoṅ bu’i bsṅal ba daṅ | lo ma’i daṅ | me tog gi bsṅal bar ’dres na ’tshal du ruṅ ṅam |&nbsp;</span><span id='7600432bi' class='paragraph'>
+						 u pā li ruṅ ṅo || ji srid du ruṅ | nam myos (5) par ma gyur | zas daṅ ma ’dres rñogs par ma gyur | nam bsṅal ba’i bar du’o ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601164bi' class='paragraph'>
+							&nbsp;</span><span id='7601165bi' class='paragraph'>
+						 問八種漿非時可飮不。&nbsp;</span><span id='7601166bi' class='paragraph'>
+						 答若無酒氣味清淨得服。&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601531bi' class='paragraph'>
+							&nbsp;</span><span id='7601532bi' class='paragraph'>
+						 云何養病除性罪。餘者養病。世尊聽飮八種漿。幾時飮。乃至未捨自性得飮&nbsp;</span><span id='7601533bi' class='paragraph'>
+						 See the previous record&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600433bi' class='paragraph'>
+							mdor na |<br />smyos par gyur daṅ byin gyis brlab ||<br />gcig pu ’dug par gyur po daṅ ||<br />gos la byin gyis mi brlab pa ||<br />mtshams kyi phyi rol dge ’dun gyi’o ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601167bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601534bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600434bi' class='paragraph'>
+							smyon pa las gos blaṅ (6) bar bgyi’am | gsuṅs pa | kha cig las ni blaṅ bar bya | kha cig las ni blaṅ bar mi bya’o ||&nbsp;</span><span id='7600435bi' class='paragraph'>
+						 gaṅ las blaṅ bar bgyi ||&nbsp;</span><span id='7600436bi' class='paragraph'>
+						 gaṅ la pha daṅ | ma daṅ | phu nu bo daṅ | sriṅ mo yod pa’am | bdag gis khyim nas byin pa de ni blaṅ bar bya’o ||&nbsp;</span><span id='7600437bi' class='paragraph'>
+						 gaṅ las mi blaṅ bar bgyi |&nbsp;</span><span id='7600438bi' class='paragraph'>
+						 gaṅ la (7) pha daṅ | ma daṅ | phu nu bo daṅ | sriṅ mo daṅ | raṅ gi khyim med pas phyin pa de ni blaṅ bar mi bya’o ||&nbsp;</span><span id='7600439bi' class='paragraph'>
+						 smyon pa gaṅ nas bzuṅ ste chos gos byin gyis brlab par bgyi |&nbsp;</span><span id='7600440bi' class='paragraph'>
+						 gaṅ gi tshe raṅ gi sems mal du phebs par gyur pa na’o ||&nbsp;</span><span id='7600441bi' class='paragraph'>
+						 btsun pa dge sloṅ gaṅ gcig pu gnas na mchis pa (224a1) der mi dag gis dge ’dun gyi phyir gos phul ba de dge ’dun gyis mṅon du bgo bar bgyi ba źig lags na dge sloṅ des gos rñed pa ji ltar bgyi |&nbsp;</span><span id='7600442bi' class='paragraph'>
+						 gsuṅs pa | u pā li de’i phyir na dge sloṅ des sems ’di ltar skyed la tshig tu yaṅ ’di skad rjod cig | (2) gnas ’di na bdag gcig pu ’dug ste | gos ’di ni dge ’dun gyi phyir te dge ’dun gyis mṅon du bgo bar rigs pa źig las bgos nas<a class='fotnote cn' name='FN5510cn7' href='#N5510cn7'><sup>7</sup></a>
+  bdag dbaṅ ste byi dar bya’o || sba’o ||<a class='fotnote cn' name='FN5510cn8' href='#N5510cn8'><sup>8</sup></a>
+&nbsp;</span><span id='7600443bi' class='paragraph'>
+						 byin gyis brlab par bya ste | byi bdar byas sbas śiṅ byin gyis brlabs la de ltar byas na las (3) byas pa źes bya’o ||&nbsp;</span><span id='7600445bi' class='paragraph'>
+						 dge sloṅ gźan dag gcig ’oṅs su zin kyaṅ de dag la skal ba ma byin cig | de ltar ma byas na dge sloṅ de gcig pus gos de ma bkur cig | khyer na ’das pa daṅ bcas par ’gyur ro ||&nbsp;</span><span id='7600446bi' class='paragraph'>
+						 dge sloṅ de dag kyaṅ mtshuṅs par dbaṅ ba las de gcig (4) pus dge ’dun gyi phyir byin gyis brlabs pa las mtshams kyi phyi rol du soṅ nas khyer na ñes byas su ’gyur ro ||&nbsp;</span><span id='7600447bi' class='paragraph'>
+						 de ste rku sems su gyur na ’das pa daṅ bcas par ’gyur ro ||&nbsp;</span><div style='' id='10' class='note cn'>7.<a class="internt" name='N5510cn7' href='#FN5510cn7'> bsgos nad D: bsgos na de Q: bgos nas da S: bgos nas V.</a>&nbsp; 8.<a class="internt" name='N5510cn8' href='#FN5510cn8'> bdar bya'o || sṅa'o DS: bdor bya'o || sṅa'o Q: bdar bya'o sṅa'o V: bdar bya’o || sba’o || H</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601168bi' class='paragraph'>
+							問得從狂人取衣不。答或可取或不可取。&nbsp;</span><span id='7601169bi' class='paragraph'>
+						 &nbsp;</span><span id='7601170bi' class='paragraph'>
+						 若知有父母兄弟居家與。可取。&nbsp;</span><span id='7601171bi' class='paragraph'>
+						 &nbsp;</span><span id='7601172bi' class='paragraph'>
+						 若知無父母兄弟非居家中與。不可取。&nbsp;</span><span id='7601173bi' class='paragraph'>
+						 問狂人何時應受衣。&nbsp;</span><span id='7601174bi' class='paragraph'>
+						 答還得本心時。&nbsp;</span><span id='7601175bi' class='paragraph'>
+						 有一比丘獨一處住。是中檀越施僧現前可分物。&nbsp;</span><span id='7601176bi' class='paragraph'>
+						 是比丘應心念口言。是衣物爲此住處現前僧可分。是衣物今屬我。 我應受自用&nbsp;</span><span id='7601177bi' class='paragraph'>
+						 若能作是語。得名羯磨。&nbsp;</span><span id='7601179bi' class='paragraph'>
+						 若餘比丘來從索。不應與。若不作。是語。是物不應取。若取得突吉羅。&nbsp;</span><span id='7601180bi' class='paragraph'>
+						 亦應共餘比丘分。若不如是作出界外。得突吉羅。&nbsp;</span><span id='7601181bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601535bi' class='paragraph'>
+							狂人邊得取衣不。或得或不得。&nbsp;</span><span id='7601536bi' class='paragraph'>
+						 云何得不。&nbsp;</span><span id='7601537bi' class='paragraph'>
+						 知父母所在兄弟姉妹。自持物施比丘得取&nbsp;</span><span id='7601538bi' class='paragraph'>
+						 云何不可取。&nbsp;</span><span id='7601539bi' class='paragraph'>
+						 父母等可知。不自手與。不可取&nbsp;</span><span id='7601540bi' class='paragraph'>
+						 狂人邊説。受持衣成受不。&nbsp;</span><span id='7601541bi' class='paragraph'>
+						 不捨自性成受。&nbsp;</span><span id='7601542bi' class='paragraph'>
+						 若比丘獨住。有人施現前僧。可分衣。無餘比丘。此衣當云何。&nbsp;</span><span id='7601543bi' class='paragraph'>
+						 彼比丘得衣時。心念口言。我此住處得是衣。現前僧應分。此中無僧。此衣屬我入我。我當受是衣。當割截縫染。我當受持。&nbsp;</span><span id='7601544bi' class='paragraph'>
+						 如是作羯磨已。&nbsp;</span><span id='7601546bi' class='paragraph'>
+						 若有比丘來不應與。若未作羯磨時來者應與。不與者。犯突吉羅&nbsp;</span><span id='7601547bi' class='paragraph'>
+						 若有比丘得衣與衆僧。界外自取。突吉羅。&nbsp;</span><span id='7601548bi' class='paragraph'>
+						 若恣心取隨事犯。二人衆多亦如是<a class='fotnote cn' name='FN5513cn3' href='#N5513cn3'><sup>3</sup></a>
+ 。&nbsp;</span><div style='' id='11' class='note cn'>3.<a class="internt" name='N5513cn3' href='#FN5513cn3'> Only T1441 corresponds to the Skt. evaṃ dvau saṃbahulā</a>&nbsp; </div><div class='clear'></div></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600448bi' class='paragraph'>
+							mdor na |<br />dge bsñen pa’i ni bu daṅ ste ||<br />dbyar gnas mṅon du gyur pa daṅ ||<br />’das daṅ (5) ma ’oṅs dge sloṅ dag ||<br />’di ltar dbyar ni źig par gyur ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601182bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601549bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600449bi' class='paragraph'>
+							dge bsñen gyis bu sma phab par gyur na de las gos blaṅ bar bgyi’am | mi blaṅ bar bgyi | &nbsp;</span><span id='7651532bi' class='generelltekst'>
+						 bcom ldan ’das kyis bka’ stsal pa | de mi blaṅ ba źes bya’o ||&nbsp;</span><span id='7600450bi' class='paragraph'>
+						 gos ’di dbyar gnas pa’i dge ’dun la phul na (6) yaṅ de dbyar gyi zla ba tha ma yaṅ ma yin la gnas der gtan pa yaṅ btiṅ bar ma gyur te | dbyar gyi zla ba tha ma yaṅ ma yin la de gnas der gtan pa ma btiṅ du zin gyis kyaṅ dbyar gnas pa’i rnams la gos de dbaṅ bar ’gyur ro ||&nbsp;</span><span id='7600452bi' class='paragraph'>
+						 gos ’di ni dge ’dun mṅon du gyur pa (7) rnams kyi yin no źe na | de yaṅ dbyar gyi zla ba tha mar kyaṅ gyur || de gnas<a class='fotnote cn' name='FN5510cn9' href='#N5510cn9'><sup>9</sup></a>
+ der gtan pa yaṅ btiṅ bar gyur na zla ba’i tha ma yaṅ yin źiṅ gnas der gtan pa btiṅ bar gyur du zin kyaṅ | gaṅ dbyar der ma gnas pa de dag kyaṅ gos de dbaṅ bar ’gyur ro ||&nbsp;</span><span id='7600454bi' class='paragraph'>
+						 gos ’di dge (224b1) ’dun mṅon sum du tshogs pa la phul bar gyur te | dge sloṅ gaṅ gnas ’dir lo phyi mar gnas | yaṅ phyir gnas | gsum phyir gnas | de bźin du lo phyi ma bcu’i bar du gnas pa de dag la dbul lo źe na | der dbyar gyi zla ba tha mar gyur la gtan pa (2) btiṅ bar kyaṅ gyur to || de dbyar gyi zla ba tha mar gyur du zin kyaṅ gaṅ la byin pa de dag dbaṅ ste | sṅa ma’i zla ba daṅ po daṅ gñis po nas bcu’i bar du rgyas par brjod do ||&nbsp;</span><span id='7600459bi' class='paragraph'>
+						 dge sloṅ dbyar gnas gnas pa las dge ’dun gyi don cig la mtshams kyi phyi rol du soṅ (3) na de’i dbyar gyi skal ba dbaṅ ba gaṅ nas stsal ||&nbsp;</span><span id='7600460bi' class='paragraph'>
+						 gaṅ gi don gyi phyir soṅ ba daṅ | gaṅ du riṅ du gnas par gyur pa’o || &nbsp;</span><span id='7778386bi' class='generelltekst'>
+						 dbyar źig pa la gos kyi skal pa stsal bar bgyi’am |&nbsp;</span><span id='7600461bi' class='paragraph'>
+						 kha cig la ni sbyin par bya’o || kha cig la ni mi sbyin par bya’o ||&nbsp;</span><span id='7600463bi' class='paragraph'>
+						 gaṅ la stsal (4) par bgyi ||&nbsp;</span><span id='7600464bi' class='paragraph'>
+						 gaṅ la sṅa ma daṅ phyi ma yod pa daṅ | gaṅ du riṅ du gnas par gyur pa la’o ||&nbsp;</span><span id='7600465bi' class='paragraph'>
+						 gaṅ la mi stsal bar bgyi |&nbsp;</span><span id='7600466bi' class='paragraph'>
+						 gaṅ la sṅa ma yaṅ med la phyi ma yaṅ med pa daṅ | gaṅ riṅ du ma gnas par gyur pa’o ||&nbsp;</span><div style='' id='12' class='note cn'>9.<a class="internt" name='N5510cn9' href='#FN5510cn9'> gnas DQ: de gnas SV</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601183bi' class='paragraph'>
+							問若賢者責罰兒。是兒持物與比丘。可取不。&nbsp;</span><span id='7651534bi' class='generelltekst'>
+						 答不可取。&nbsp;</span><span id='7601184bi' class='paragraph'>
+						 問自恣竟先檀越施僧衣作是言。是物施是間安居僧。是時非夏末月。諸比丘亦不受迦絺那衣。是衣應屬誰。<br/>答雖非夏末月諸比丘亦不受迦絺那衣是衣應屬此間安居竟僧應分。&nbsp;</span><span id='7601186bi' class='paragraph'>
+						 問諸檀越持衣施。作是言。是衣施是間現前僧。是時夏末月。諸比丘受迦絺那衣。是衣應屬誰。<br/>答雖是夏末月。雖受迦絺那衣。是衣應是一住處現前僧應分。&nbsp;</span><span id='7601188bi' class='paragraph'>
+						 問檀越持衣施。作是言。是衣施此住處去年乃至十歳安居僧。是安居時非夏末月。不受迦絺那衣。是衣應屬誰。<br/>答雖非夏末月不受迦絺那衣。是衣但去年乃至十年。此處安居僧應分。<br/>問檀越持衣入僧坊。作是言。是衣施此住處將來一年二年乃至十年是中安居僧。爾時是夏末月。受迦絺那衣。是衣應屬誰。<br/>答雖是夏末月受迦絺那衣。是衣應來一年乃至十年此間安居僧分。&nbsp;</span><span id='7601193bi' class='paragraph'>
+						 問勸化主爲僧事出界去。誰當與安居衣分。&nbsp;</span><span id='7601194bi' class='paragraph'>
+						 答隨所爲出界處應與。又隨所住日多處應與。&nbsp;</span><span id='7778388bi' class='generelltekst'>
+						 問破安居比丘。應與衣分不。&nbsp;</span><span id='7601195bi' class='paragraph'>
+						 答或應與或不應與。&nbsp;</span><span id='7601197bi' class='paragraph'>
+						 何者應與。&nbsp;</span><span id='7601198bi' class='paragraph'>
+						 若知前安居若後安居。應與若多住應與。若半住應與。&nbsp;</span><span id='7601199bi' class='paragraph'>
+						 何者不應與。&nbsp;</span><span id='7601200bi' class='paragraph'>
+						 若知不前安居。若知不後安居。若住日少是。&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601550bi' class='paragraph'>
+							長者兒被驅布施。得取不。&nbsp;</span><span id='7651535bi' class='generelltekst'>
+						 不得取&nbsp;</span><span id='7601551bi' class='paragraph'>
+						 有衣與自恣僧。自恣僧應分。若施現前僧。現前僧應分。安居中爲僧故。&nbsp;</span><span id='7601553bi' class='paragraph'>
+						 &nbsp;</span><span id='7601555bi' class='paragraph'>
+						 See the previous answer of the Buddha.&nbsp;</span><span id='7601560bi' class='paragraph'>
+						 出界外者得物應分。破安居人得衣分不。&nbsp;</span><span id='7601561bi' class='paragraph'>
+						 或得或不得。&nbsp;</span><span id='7778389bi' class='generelltekst'>
+						 &nbsp;</span><span id='7601562bi' class='paragraph'>
+						 &nbsp;</span><span id='7601564bi' class='paragraph'>
+						 &nbsp;</span><span id='7601565bi' class='paragraph'>
+						 若前後安居已破者應得。&nbsp;</span><span id='7601566bi' class='paragraph'>
+						 &nbsp;</span><span id='7601567bi' class='paragraph'>
+						 前後不安居者不得。&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600467bi' class='paragraph'>
+							mdor na |<br />nad pa yi ni don la ste ||<br />nad g-yog tu (5) ni gyur pa daṅ ||<br />ruṅ bar byas daṅ bslab pa byin ||<br />nor rnams ruṅ bar ji ltar bya ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601201bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601568bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600468bi' class='paragraph'>
+							dge sloṅ nad g-yog bgyid pa de don cig la mtsham kyi slad rol du mchis pa daṅ | de mtshams kyi slad rol du mchis pa’i ’og tu nad pa dus las ’das na nad g-yogs la gos rnams (6) stsal bar bgyi’am mi stsal bar bgyi ||&nbsp;</span><span id='7600469bi' class='paragraph'>
+						 kha cig la ni sbyin par bya’o || kha cig la ni mi sbyin par bya’o ||&nbsp;</span><span id='7600471bi' class='paragraph'>
+						 gaṅ la stsal bar bgyi | gaṅ nad pa’i don gyi phyir brel bar gyur pa de la ni sbyin par bya’o || gaṅ raṅ gi don tam gźan gyi don la brel bar gyur pa de la ni mi sbyin (7) no ||&nbsp;</span><span id='8023910bi' class='generelltekst'>
+						  &nbsp;</span><span id='7600473bi' class='paragraph'>
+						 khyim pa źig nad pa’i g-yog bgyid na gos stsal bar bgyi’am mi stsal bar bgyi |&nbsp;</span><span id='7600474bi' class='paragraph'>
+						 gsuṅs pa | mi sbyin te | dge sloṅ ma daṅ | dge slob ma daṅ | dge tshul ma yaṅ de bźin du mi sbyin no ||&nbsp;</span><span id='8023930bi' class='generelltekst'>
+						 See the next records (four and five records in the following)&nbsp;</span><span id='7600475bi' class='paragraph'>
+						 dge tshul pha źig nad g-yogs bgyid na de la nad g-yog gi (225a1) gos stsal bar bgyi’am | mi stsal bar bgyi | &nbsp;</span><span id='8023915bi' class='generelltekst'>
+						 gsuṅs pa | sbyin par bya’o ||&nbsp;</span><span id='8023920bi' class='generelltekst'>
+						 ji tsam źig stsal | kun daṅ yaṅ mñam par ro ||&nbsp;</span><span id='8059493bi' class='generelltekst'>
+						 &nbsp;</span><span id='7600477bi' class='paragraph'>
+						 nad g-yog dbyar gnas gźan du tshul du źugs pa źig na | de la nad g-yog gi gos stsal bar bgyi’am | mi stsal bar (2) bgyi |&nbsp;</span><span id='8023925bi' class='generelltekst'>
+						 bcom ldan ’das kyis bka’ stsal pa | sbyin par bya’o ||&nbsp;</span><span id='7600478bi' class='paragraph'>
+						 nad g-yog sus bgyi |&nbsp;</span><span id='7600479bi' class='paragraph'>
+						 mkhan po daṅ | slob dpon daṅ | mkhan po gcig pa daṅ | slob dpon gcig pa daṅ | smra ba daṅ | kun du smra ba daṅ | ston pa daṅ | lhan cig spyod pa daṅ | slob mas so ||&nbsp;</span><span id='7600480bi' class='paragraph'>
+						 (3) de ste med na dge ’dun gyis nad g-yog skos śig | de ste dge ’dun gyis kyaṅ nad g-yog ma bskos na ’das pa daṅ bcas pa’o || nad g-yog gis kyaṅ nad pa’i nad g-yog ma byas na ñes byas su ’gyur ro || de ste nad pas nad g-yog la chos bźin du bsgo ba ma mñan na ñes byas su (4) ’gyur ro || nad pa la yaṅ de bźin no ||&nbsp;</span><span id='7600484bi' class='paragraph'>
+						 nad pa la ji srid du nad g-yo bgyi |&nbsp;</span><span id='7600485bi' class='paragraph'>
+						 ji srid nad pa śi ba’am | de ste sos par gyur pa’i bar du’o || mi phan pa rnams spoṅ bar byed | phan pa’i rnams ni sgrub par byed | don rnams kyaṅ ñams par mi byed pa bslab pa stsal bas (5) gaṅ nas bzuṅ źig gos rnams byin gyis brlab par bgyi nam rñed na’o ||&nbsp;</span><span id='7600486bi' class='paragraph'>
+						 nor rnams ji ltar ruṅ bar bgyi |&nbsp;</span><span id='7600487bi' class='paragraph'>
+						 mi ruṅ ba ’dis ruṅ ba bsgrub par bya źiṅ na ba’i sman rnams gźag par bya’o sñam du’o ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601202bi' class='paragraph'>
+							問看病人。爲病人故出界去。病人命終。應與看病人衣分不。&nbsp;</span><span id='7601203bi' class='paragraph'>
+						 答。或應與或不應與。&nbsp;</span><span id='7601205bi' class='paragraph'>
+						 與者。實爲病人故出。應與。若餘事故出。不應與。&nbsp;</span><span id='8023912bi' class='generelltekst'>
+						 問云何名看病人。<br/>答若能看視療治病人乃至若死。若差與隨病藥隨病食。具足供給親近益利。使離諸衰損所作無闕。是名看病人。<br/>cf. See the following records (nine and ten records in the following)&nbsp;</span><span id='7601207bi' class='paragraph'>
+						 問若白衣作看病人。應與看病人物分不。&nbsp;</span><span id='7601208bi' class='paragraph'>
+						 答不應與。<br/>問若比丘尼作看病人。應與看病人物不。<br/>答不應與。&nbsp;</span><span id='8023932bi' class='generelltekst'>
+						 若是看病比丘餘處安居。應與看病人物不。<br/答應與。<br/>問若看病人後安居。病比丘前安居。應與看病人物不。<br/>答應與。&nbsp;</span><span id='7601209bi' class='paragraph'>
+						 問若沙彌作看病人。應與看病人物不。&nbsp;</span><span id='8023917bi' class='generelltekst'>
+						 答應與。&nbsp;</span><span id='8023922bi' class='generelltekst'>
+						 云何與。答大比丘等與。&nbsp;</span><span id='8059495bi' class='generelltekst'>
+						 問與學沙彌齊何作淨施。答隨所得時作淨施。&nbsp;</span><span id='7601211bi' class='paragraph'>
+						 See the previous record (four records ahead) &nbsp;</span><span id='8023927bi' class='generelltekst'>
+						 See the previous record (five records ahead)&nbsp;</span><span id='7601212bi' class='paragraph'>
+						  (cf. the previous record; nine records ahead)&nbsp;</span><span id='7601213bi' class='paragraph'>
+						  (cf. the previous record; ten records ahead)&nbsp;</span><span id='7601214bi' class='paragraph'>
+						 &nbsp;</span><span id='7601218bi' class='paragraph'>
+						 &nbsp;</span><span id='7601219bi' class='paragraph'>
+						 &nbsp;</span><span id='7601220bi' class='paragraph'>
+						 問錢云何作淨施。&nbsp;</span><span id='7601221bi' class='paragraph'>
+						 答應言。此是不淨物。若淨當受。&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601569bi' class='paragraph'>
+							看病人出界去。後病者死。應與衣不。&nbsp;</span><span id='7601570bi' class='paragraph'>
+						 有應與不應與。&nbsp;</span><span id='7601572bi' class='paragraph'>
+						 爲病者去應與。爲自去者不應與。&nbsp;</span><span id='8023913bi' class='generelltekst'>
+						 &nbsp;</span><span id='7601574bi' class='paragraph'>
+						 白衣看病應與不應與。&nbsp;</span><span id='7601575bi' class='paragraph'>
+						 應與少許比丘尼。式叉摩尼。沙彌沙彌尼。亦如是。&nbsp;</span><span id='8023933bi' class='generelltekst'>
+						 See the next record (two records in the following)&nbsp;</span><span id='7601576bi' class='paragraph'>
+						 &nbsp;</span><span id='8023918bi' class='generelltekst'>
+						 餘處安居餘處看病。病者死應與衣。不應與沙彌。&nbsp;</span><span id='8023923bi' class='generelltekst'>
+						 看病應盡與。爲少與。應盡與。或等與。&nbsp;</span><span id='8059496bi' class='generelltekst'>
+						 &nbsp;</span><span id='7601578bi' class='paragraph'>
+						 See the previous record (two records ahead) &nbsp;</span><span id='8023928bi' class='generelltekst'>
+						 See the previous record (three records ahead)&nbsp;</span><span id='7601579bi' class='paragraph'>
+						  &nbsp;</span><span id='7601580bi' class='paragraph'>
+						  &nbsp;</span><span id='7601581bi' class='paragraph'>
+						 若無看病人僧盡應看。若不看。犯突吉羅。若差看不看。犯突吉羅。病人不用看病人語。突吉羅。看病人不用病人語。突吉羅。&nbsp;</span><span id='7601585bi' class='paragraph'>
+						 &nbsp;</span><span id='7601586bi' class='paragraph'>
+						 &nbsp;</span><span id='7601587bi' class='paragraph'>
+						 若人施不淨物作&nbsp;</span><span id='7601588bi' class='paragraph'>
+						 是言。我等不得用不淨物。作是念已。施某甲淨人。得淨者當受&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600488bi' class='paragraph'>
+							mdor na ||<br />dge sloṅ gnas pa rnam bźi ni ||<br />gnaṅ ba daṅ ni mas rnams daṅ ||<br />(6) soṅ nas slar ’oṅs spaṅ ba daṅ ||<br />sbom po mu stegs can daṅ gsum ||<br />&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601222bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601589bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600489bi' class='paragraph'>
+							dge sloṅ gis sṅar yaṅ ma lags | slad kyis kyaṅ ma lags par gnas bźir dbyar cig car tshul du yaṅ źugs la noṅs par kyaṅ mi ’gyur ba mchis sam |&nbsp;</span><span id='7600490bi' class='paragraph'>
+						 yod de | de ’di ltar dge sloṅ (7) de khri’am re lde’am ra goṅ yaṅ ruṅ ste | gnas bźi’i mtshams su mnan nas dbyar tshul du źugs na tshul du źugs pa źes kyaṅ bya ste | ñes pa yaṅ med do ||&nbsp;</span><span id='7600492bi' class='paragraph'>
+						 de’i gos kyi bgos skal gaṅ nas ’thob |&nbsp;</span><span id='7600493bi' class='paragraph'>
+						 thams cad nas so ||&nbsp;</span><span id='7600494bi' class='paragraph'>
+						 dbyar gyi ras chen tshad las chuṅ ṅu ’chaṅ na de’i (225b1) noṅs pa gaṅ lags |&nbsp;</span><span id='7600495bi' class='paragraph'>
+						 gsuṅs pa | ñes byas su ’gyur ro || de bźin du g-yan pa dgab pa daṅ ’diṅ ba yaṅ de bźin no ||&nbsp;</span><span id='7600497bi' class='paragraph'>
+						 soṅ nas slar mchis pa’i gos kyis gtan pa gdiṅ na gtan pa btiṅ ba źes bgyi’am | ma btiṅ ba źes bgyi |&nbsp;</span><span id='7600498bi' class='paragraph'>
+						 gsuṅs pa | gtan pa ma (2) btiṅ ba źes bya’o ||&nbsp;</span><span id='7600499bi' class='paragraph'>
+						 gos de gaṅ lags | lam phran nas<a class='fotnote cn' name='FN5510cn10' href='#N5510cn10'><sup>10</sup></a>
+  rñed pa’o || &nbsp;</span><span id='7600500bi' class='paragraph'>
+						 spaṅ ba byuṅ ba’i gos rnams bgos na de’i ltuṅ ba gaṅ lags |&nbsp;</span><span id='7600501bi' class='paragraph'>
+						 gsuṅs pa | ñes byas so ||&nbsp;</span><span id='7600502bi' class='paragraph'>
+						 mu stegs can gyi rgyal mtshan gos ma mchis pa daṅ | ’ol ba’i sgro daṅ | skra’i la ba daṅ gsum (3) ’chaṅ na de’i ltuṅ ba gaṅ lags | &nbsp;</span><span id='8059498bi' class='generelltekst'>
+						 ñes pa sbom por ’gyur ro ||&nbsp;</span><span id='7600503bi' class='paragraph'>
+						 mu stegs can gyi rgyal mtshan gsum po ma gtogs par mu stegs can gyi rgyal mtshan gźan ’dzin na cir ’gyur | &nbsp;</span><span id='8059503bi' class='generelltekst'>
+						 bcom ldan ’das kyis bka’ stsal pa | ñes byas so ||&nbsp;</span><div style='' id='13' class='note cn'>10.<a class="internt" name='N5510cn10' href='#FN5510cn10'> lam phan chad nas DQ: lam phran nas SV.</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601223bi' class='paragraph'>
+							問頗一比丘四住處一時安居。得名安居無罪耶。&nbsp;</span><span id='7601224bi' class='paragraph'>
+						 答若以床榻材木連接四界。得名安居。&nbsp;</span><span id='7601226bi' class='paragraph'>
+						 何處應與安居衣分。&nbsp;</span><span id='7601227bi' class='paragraph'>
+						 答應四處各與四分之一。&nbsp;</span><span id='7601228bi' class='paragraph'>
+						 若比丘雨浴衣若小受。&nbsp;</span><span id='7601229bi' class='paragraph'>
+						 得突吉羅。若覆瘡衣若小受。得突吉羅。若比丘分盈長衣。得突吉羅。&nbsp;</span><span id='7601231bi' class='paragraph'>
+						 &nbsp;</span><span id='7601232bi' class='paragraph'>
+						 &nbsp;</span><span id='7601233bi' class='paragraph'>
+						 &nbsp;</span><span id='7601234bi' class='paragraph'>
+						 &nbsp;</span><span id='7601235bi' class='paragraph'>
+						 &nbsp;</span><span id='7601236bi' class='paragraph'>
+						 問若比丘作三相。一赤裸。二著角鵄翅衣。三著髮欽婆羅。得何罪。&nbsp;</span><span id='8059500bi' class='generelltekst'>
+						 答得偸蘭遮。&nbsp;</span><span id='7601237bi' class='paragraph'>
+						 問若比丘除是三相。更作餘相。得何罪。&nbsp;</span><span id='8059505bi' class='generelltekst'>
+						 答得突吉羅。&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601590bi' class='paragraph'>
+							有比丘四處安居。成安居不。&nbsp;</span><span id='7601591bi' class='paragraph'>
+						 若以床木四界安居。&nbsp;</span><span id='7601593bi' class='paragraph'>
+						 何處應得安居。&nbsp;</span><span id='7601594bi' class='paragraph'>
+						 衣分共與一分。&nbsp;</span><span id='7601595bi' class='paragraph'>
+						 減量作雨衣受持。&nbsp;</span><span id='7601596bi' class='paragraph'>
+						 突吉羅。覆瘡衣亦如是。&nbsp;</span><span id='7601598bi' class='paragraph'>
+						 &nbsp;</span><span id='7601599bi' class='paragraph'>
+						 &nbsp;</span><span id='7601600bi' class='paragraph'>
+						 &nbsp;</span><span id='7601601bi' class='paragraph'>
+						 &nbsp;</span><span id='7601602bi' class='paragraph'>
+						 &nbsp;</span><span id='7601603bi' class='paragraph'>
+						 畜三種外道衣。謂皮衣毛衣髮衣。&nbsp;</span><span id='8059501bi' class='generelltekst'>
+						 偸羅遮。&nbsp;</span><span id='7601604bi' class='paragraph'>
+						 除此三種。畜外道餘衣。&nbsp;</span><span id='8059506bi' class='generelltekst'>
+						 突吉羅&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600504bi' class='paragraph'>
+							’dul ba gźuṅ dam pa las | (4) ma na bi ka ba’i sgo daṅ po ste rdzogs s+ho || ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601238bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601605bi' class='paragraph'>
+							, but the next question of Upāli starts in a new line. &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600505bi' class='paragraph'>
+							mdor bsdus par na |<br />rñiṅs pa gdiṅ daṅ riṅs pa gsum ||<br />gzu bo’i ñes pa ji tsam gyis ||<br />ko śam bis ni ji ltar las byas pa ||<br />las daṅ gzu bo rjes su bsgrags ||<br />bsdigs pa bsdus nas bsgrags pa’o ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601239bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601606bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600506bi' class='paragraph'>
+							mdor (5) na ||<br />rñiṅs pa sar pa gñis po daṅ ||<br />kha dog can daṅ ma bźag pa ||<br />mi ruṅ daṅ yaṅ de bźin te ||<br />yoṅs spyad daṅ ma bgos ruṅ ba’o ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601240bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601607bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600507bi' class='paragraph'>
+							btsun pa bcom ldan ’das kyis gos rñiṅs pa gtan par btiṅ na gtan par ma btiṅ ba’o<a class='fotnote cn' name='FN5510cn11' href='#N5510cn11'><sup>11</sup></a>
+ źes gsuṅs na | gos rñiṅs pa (6) gaṅ lags |&nbsp;</span><span id='7600508bi' class='paragraph'>
+						 gos gaṅ yaṅ gtan par btiṅ par gyur pa’o ||&nbsp;</span><span id='7600509bi' class='paragraph'>
+						 bcom ldan ’das kyis gos sar pa gtan par btiṅ na gtan pa btiṅ ba yin no źes gsuṅs | gos sar pa gaṅ lags | &nbsp;</span><span id='7600510bi' class='paragraph'>
+						 gos gaṅ sṅar gtan par ma btiṅ ba’o || &nbsp;</span><span id='8060123bi' class='generelltekst'>
+						 bcom ldan ’das kyis gtan pa btiṅ ba’i (7) dge sloṅ gis gos len pa’i tshe sems gsum bskyed par bya’o || thog mar ’gro bar bya’o || gaṅ gi tshe mthar phyin na skud kham gsum tsam yaṅ drubs la | sems rnam pa gsum yaṅ bskyed par bya’o ||&nbsp;</span><span id='7600513bi' class='paragraph'>
+						 ’khru ba daṅ | ’dra ba daṅ | btso ba daṅ | dkyil ’khor phyed daṅ gsum (226a1) pa yaṅ byos śig ces gsuṅs na | gtan pa btiṅ bas sems rnam pa gsum bskyed na gtan pa btiṅ źes bgyi’am | de ste gos ’di ni dge ’dun gyi gtan par gtiṅ ste | bdag gis źes sems rnam pa gñis bskyed par bgyi |&nbsp;</span><span id='7600515bi' class='paragraph'>
+						 sems de ltar rnam gñis (2) bskyed de gtan par btiṅ na gtan pa gdiṅ ba la ñes byas su ’gyur ro ||&nbsp;</span><span id='8059908bi' class='generelltekst'>
+						 spaṅ ba’i gos gtan par btiṅ na gtan par btiṅ bar mi ’gyur ro źes gsuṅs na | spaṅ ba’i gos gaṅ lags | &nbsp;</span><span id='7600516bi' class='paragraph'>
+						 źag bcu las ’das pa’am | nub gcig bral bar gyur pa’o ||&nbsp;</span><span id='7600517bi' class='paragraph'>
+						 mi ruṅ ba’i gos gtan par (3) btiṅ na gtan par btiṅ ba ma yin no źes gsuṅs na | mi ruṅ ba’i gos gaṅ lags | gos gaṅ rgyu mi ruṅ bar gyur ba’o ||&nbsp;</span><span id='7600518bi' class='paragraph'>
+						 btsun pa bcom ldan ’das kyis gos bgos pa rñiṅ pa gtan pa btiṅ na gtan par btiṅ ba ma yin no źes gsuṅs na | gos rñiṅ pa bgos pa de gaṅ lags | (4) gos gaṅ dge sloṅ gis rtag tu bgos pa’o ||&nbsp;</span><span id='7600519bi' class='paragraph'>
+						 ma bgos pa’i gos gtan par btiṅ na gtan par btiṅ ba yin no źes gsuṅs na | ma bgos pa’i gos gaṅ lags ||&nbsp;</span><span id='7600520bi' class='paragraph'>
+						 gos gaṅ rgyu las gsar du btags pa’o ||&nbsp;</span><span id='7600521bi' class='paragraph'>
+						 ma bgos pa ruṅ ba’i gos gtan par btiṅ na gtan par btiṅ (5) ba yin źes gsuṅs na | ma bgos pa ruṅ ba’i gos gaṅ lags | &nbsp;</span><div style='' id='14' class='note cn'>11.<a class="internt" name='N5510cn11' href='#FN5510cn11'> btiṅ ba’o QSV: btiṅ ba’o || D</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601241bi' class='paragraph'>
+							問如佛所説。故衣不得受作迦絺那衣。若受不名受。云何名故衣。&nbsp;</span><span id='7601242bi' class='paragraph'>
+						 答以曾受作迦絺那衣。是名故衣。&nbsp;</span><span id='7601243bi' class='paragraph'>
+						 又問如佛所説。新衣應受作迦絺那衣。云何名新衣。&nbsp;</span><span id='7601244bi' class='paragraph'>
+						 答若衣未曾受作迦絺那衣。是名新衣&nbsp;</span><span id='8060125bi' class='generelltekst'>
+						 佛告優波離。令僧作迦絺那衣人。應次第作浣染割截簪綴連縫量度作迦絺那衣。浣時應生是心。以是衣令僧受作迦絺那衣。染時割截時簪綴時連縫時量度時。應生是心。以是衣令僧受作迦絺那衣。若能生是六心。得名受作迦絺那衣。若不生是六心。不名受作迦絺那衣。又復作迦絺那衣人應生三心。以是衣令僧受作迦絺那衣。以是衣今受作迦絺那衣。以是衣受作迦絺那衣竟。若能生是三心。得名受作迦絺那衣。若不生是三心。不得名受作迦絺那衣。&nbsp;</span><span id='7601247bi' class='paragraph'>
+						 又復作迦絺那衣。應生二心。得名受作迦絺那衣。何等二心。是衣今受作迦絺那衣。以是衣今受作迦絺那衣竟。若生是二心。名受迦絺那衣。&nbsp;</span><span id='7601249bi' class='paragraph'>
+						 若不生是二心作迦絺那衣比丘。皆得突吉羅。&nbsp;</span><span id='8059910bi' class='generelltekst'>
+						 問若受擧宿衣。受迦絺那衣。不名受迦絺那衣。云何名擧宿衣。&nbsp;</span><span id='7601250bi' class='paragraph'>
+						 答若長衣過十夜是。&nbsp;</span><span id='7601251bi' class='paragraph'>
+						 若受不淨衣。不名受迦絺那衣。云何是不淨衣。<br/>答得望衣是。&nbsp;</span><span id='7601252bi' class='paragraph'>
+						 問如佛所説。去來衣不得受作迦絺那衣。云何名去來衣。<br/>答若衣覆死人。到塚間還取來。是名去來衣。&nbsp;</span><span id='7601253bi' class='paragraph'>
+						 &nbsp;</span><span id='7601254bi' class='paragraph'>
+						 &nbsp;</span><span id='7601255bi' class='paragraph'>
+						 問如佛所説。用淨衣受作迦絺那衣。云何名淨衣。&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601608bi' class='paragraph'>
+							如世尊所説。故衣不得受作迦絺那衣。云何故衣。&nbsp;</span><span id='7601609bi' class='paragraph'>
+						 謂先已受作迦絺那衣&nbsp;</span><span id='7601610bi' class='paragraph'>
+						 世尊所説。新衣受作迦絺那衣。云何新衣。&nbsp;</span><span id='7601611bi' class='paragraph'>
+						 初受作迦絺那衣。名新衣。&nbsp;</span><span id='8060126bi' class='generelltekst'>
+						 如世尊所説。發三心受作迦絺那衣。云何三心。謂乃至最後發三心。謂浣時截時染時。不發此三心成受迦絺那衣。不成受。犯突吉羅。&nbsp;</span><span id='7601614bi' class='paragraph'>
+						 成已復應發二心。此衣當爲僧受作迦絺那衣。我已受是迦絺那衣。不發二心。成受不成受。&nbsp;</span><span id='7601616bi' class='paragraph'>
+						 犯突吉羅&nbsp;</span><span id='8059911bi' class='generelltekst'>
+						 如佛所説。經宿衣受迦絺那衣。不成受。云何經宿。&nbsp;</span><span id='7601617bi' class='paragraph'>
+						 謂過十夜。或經一夜&nbsp;</span><span id='7601618bi' class='paragraph'>
+						 如世尊所説。不淨衣受迦絺那。不成受。云何不淨衣。<br/>謂頻日得衣&nbsp;</span><span id='7601619bi' class='paragraph'>
+						 如世尊所説。故衣受作迦絺那衣。不成受。云何故。<br/>比丘受用三衣。&nbsp;</span><span id='7601620bi' class='paragraph'>
+						 如世尊所説。被打衣成受迦絺那衣。云何打衣。&nbsp;</span><span id='7601621bi' class='paragraph'>
+						 謂新衣。&nbsp;</span><span id='7601622bi' class='paragraph'>
+						 如所説打淨衣成受迦絺那。云何打淨。&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='8060128bi' class='generelltekst'>
+							gos gaṅ khod daṅ ldan pa de gtan par btiṅ na gtan par btiṅ ba źes bya’o ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='8060130bi' class='generelltekst'>
+							答佛所聽讃歎者。是名淨衣。&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='8060131bi' class='generelltekst'>
+							謂壞色衣未受迦絺那&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600522bi' class='paragraph'>
+							mdor na |<br />ma btiṅ bar ni dge ’dun bye ||<br />btiṅ nas bye bar gyur pa ni ||<br />phyogs gcig pa ni gaṅ gis bgyi ||<br />zin par bya bar (6) gyur ba’o ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601256bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601623bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600523bi' class='paragraph'>
+							btsun pa gtan pa ma btiṅ ba’i gnas su dge ’dun bye nas de dag las phyogs gcig gam phyogs gñis bas gtan pa btiṅ na gtan pa btiṅ ba źes bgyi’am | u pā li gtan pa btiṅ ba źes bya’o ||&nbsp;</span><span id='7600524bi' class='paragraph'>
+						 de thams cad kyis<a class='fotnote cn' name='FN5510cn12' href='#N5510cn12'><sup>12</sup></a>
+ ci gtan pa btiṅ ba źes bgyi’am | u (7) pā li ma yin te | gaṅ gis btiṅ ba de dag la ni btiṅ ba źes bya’i gaṅ gis ma btiṅ ba de dag ni gtan pa ma btiṅ ba źes bya’o ||&nbsp;</span><span id='8060293bi' class='generelltekst'>
+						  &nbsp;</span><span id='7600525bi' class='paragraph'>
+						 btsun pa btiṅ ba’i gnas su dge ’dun bye nas de dag las phyogs gcig pa’am phyogs gñis pos kyaṅ ruṅ gtan pa phyuṅ na<a class='fotnote cn' name='FN5510cn13' href='#N5510cn13'><sup>13</sup></a>
+ gtan pa phyuṅ ba źes (226b1) bgyi’am | u pā li phyuṅ ba’o ||&nbsp;</span><span id='7600526bi' class='paragraph'>
+						 ci thams cad kyis phyuṅ ba źes bgyi’am | u pā li ma yin te | gaṅ gis gtan pa phyuṅ ba de dag la ni phyuṅ ba źes bya | gaṅ gis ma phyuṅ ba de dag la ni gtan pa phyuṅ ba źes mi bya’o ||&nbsp;</span><span id='7600527bi' class='paragraph'>
+						 dge ’dun phyogs daṅ | phyogs ma yin par bye ste mchis na (2) gaṅ gis gtan pa gdiṅ bar bgyi | bcom ldan ’das kyis bka’ stsal pa | chos bźin smra ba rnams kyis so ||&nbsp;</span><span id='7600528bi' class='paragraph'>
+						 btsun pa gos ma lags par dge ’dun gyi gtan par btiṅ na gtan par btiṅ ba źes bgyi’am | gtan par ma btiṅ bźes bgyi | u pā li ma btiṅ ba źes bya’o ||&nbsp;</span><span id='7600529bi' class='paragraph'>
+						 (3) btsun pa gos zin nas gtan par btiṅ na gtan pa btiṅ ba źes bgyi’am | u pā li btiṅ ba źes bya’o ||&nbsp;</span><div style='' id='15' class='note cn'>12.<a class="internt" name='N5510cn12' href='#FN5510cn12'> thams cad DQ: thams cad kyis SV</a>&nbsp; 13.<a class="internt" name='N5510cn13' href='#FN5510cn13'> gtan pa byuṅ na D: gtan pa phyuṅ na Q: brtan phyuṅ na | S: brtan pa phyuṅ na V.</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601257bi' class='paragraph'>
+							問若未受迦絺那衣。僧壞爲二部。何部應受迦絺那衣。<br/>答如法部 應受。&nbsp;</span><span id='7601258bi' class='paragraph'>
+						 See the previous record&nbsp;</span><span id='8060295bi' class='generelltekst'>
+						 若諸比丘受迦絺那衣竟。僧壞爲二部。是諸比丘。得名受迦絺那衣不。<br/>答皆得名受。&nbsp;</span><span id='7601259bi' class='paragraph'>
+						 問若受迦絺那衣住處。僧壞爲二部。是二部中有諸比丘。捨迦絺那衣。是名捨不。<br/>答若如法者捨。得名爲捨&nbsp;</span><span id='7601260bi' class='paragraph'>
+						 See the previous record&nbsp;</span><span id='7601261bi' class='paragraph'>
+						 &nbsp;</span><span id='7601262bi' class='paragraph'>
+						 &nbsp;</span><span id='7601263bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601624bi' class='paragraph'>
+							時。僧壞爲二衆。一衆受。一衆不受。二衆成受不。<br/>受者成受。不受者不成。&nbsp;</span><span id='7601625bi' class='paragraph'>
+						 See the previous record &nbsp;</span><span id='8060296bi' class='generelltekst'>
+						 &nbsp;</span><span id='7601626bi' class='paragraph'>
+						 受已受迦絺那衣。僧壞爲二部。一衆捨。一衆不捨。成捨不。<br/>捨者成捨。不捨者不成捨。&nbsp;</span><span id='7601627bi' class='paragraph'>
+						 See the previous record &nbsp;</span><span id='7601628bi' class='paragraph'>
+						 若僧破時。誰應受。<br/>謂如法者。應受&nbsp;</span><span id='7601629bi' class='paragraph'>
+						 &nbsp;</span><span id='7601630bi' class='paragraph'>
+						 未成衣受作迦絺那衣。不成受。成者受成受&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600530bi' class='paragraph'>
+							mdor na |<br />sems gsum bskyed daṅ bag yaṅs daṅ ||<br />rkyen daṅ gtan pa de yi don ||<br />u pā li gnas brel ba’o ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601264bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601631bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600531bi' class='paragraph'>
+							gtan pa btiṅ ba’i dge sloṅ gis mjug tu khab so ’dub (4) ba’i tshe sems gsum bskyed par gyis śig ces gsuṅs na | de gaṅ lags | &nbsp;</span><span id='7600532bi' class='paragraph'>
+						 gos ’di dge ’dun gyi gtan par gdiṅ bar bya’o || gos ’di ni gdiṅ ṅo || gos ’di ni btiṅ ṅo źes brjod do ||&nbsp;</span><span id='7600534bi' class='paragraph'>
+						 gtan pa gdiṅ ba de ltar sems gsum bskyed na gtan pa btiṅ ba źes bgyi’am | (5) ma btiṅ bźes bgyi’am | &nbsp;</span><span id='8308938bi' class='generelltekst'>
+						 btiṅ ba źes bya’o ||&nbsp;</span><span id='7600535bi' class='paragraph'>
+						 ’on kyaṅ sems bskyed pa rnam pa gñis ni sṅa ma bźin du gyis śig | sems de gñis ma bskyed na cir ’gyur |&nbsp;</span><span id='7600536bi' class='paragraph'>
+						 gtan pa btiṅ ba źes ni bya ste | gtan pa gdiṅ ba ni ñes byas su ’gyur ro ||&nbsp;</span><span id='7600538bi' class='paragraph'>
+						 gtan pa btiṅ ba’i gnas su (6) rkyen dus bag yaṅs su ’gyur | lṅa ste | gos ci rñed ’chaṅ yaṅ ruṅ ba daṅ | sbyar ma med bźin du groṅ du ’jug pa daṅ | ’dus śiṅ za ba daṅ | yaṅ yaṅ za ba daṅ | ma bsgo bar spyod pa daṅ | steṅ gos daṅ | mthaṅ gos kyis ljoṅs spyod du ’gro ba’o ||&nbsp;</span><span id='7600539bi' class='paragraph'>
+						 btsun pa rgyu (7) du rkyen dus na sbyar ma bźag kyaṅ ’bral bar mi ’gyur | lṅa ste | ji ltar ’dul ba las ’dus par ’byuṅ ba bźin du dbyar gyi ras chen gźag pa’aṅ de bźin no ||&nbsp;</span><span id='7600540bi' class='paragraph'>
+						 gtan pa źes bgyi ba’i don ji lta bu lags | gtan pa źes bya ba ni gos la bya ste | gos gaṅ dge ’dun gyi<a class='fotnote cn' name='FN5510cn14' href='#N5510cn14'><sup>14</sup></a>
+  gtan (227a1) par gdiṅ ba’o ||&nbsp;</span><span id='7600541bi' class='paragraph'>
+						 btsun pa bcom ldan ’das kyis u pā li khyod gnas brel ba’o źes gsuṅs pa’i don ji lta bu lags | gnas gaṅ na gos rñed par gyur pa ni brel ba źes bya’o ||&nbsp;</span><div style='' id='16' class='note cn'>14.<a class="internt" name='N5510cn14' href='#FN5510cn14'> According to the Sanskrit, it should be dge 'dun gyis for skt. saṃghaḥ</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601265bi' class='paragraph'>
+							See the next record&nbsp;</span><span id='7601266bi' class='paragraph'>
+						 佛告優波離。作迦絺那衣人。若浣染割截簪綴連縫二長一短時。應生三心用是衣。當令受作迦絺那衣。以是衣今受作迦絺那衣。以是衣今受作迦絺那衣竟。&nbsp;</span><span id='7601268bi' class='paragraph'>
+						 若能生是三心得名受作迦絺那衣。若不生是三心。不得名受作迦絺那衣。&nbsp;</span><span id='8308940bi' class='generelltekst'>
+						 See the previous record&nbsp;</span><span id='7601269bi' class='paragraph'>
+						 又復應生二心。以是衣今受作迦絺那衣以是衣今受作迦絺那衣竟。(See also the next record)&nbsp;</span><span id='7601270bi' class='paragraph'>
+						 若生是二心。得名受迦絺那衣。若不生是二心。不得名受作迦絺那衣。作迦絺那衣人得突吉羅。&nbsp;</span><span id='7601272bi' class='paragraph'>
+						 &nbsp;</span><span id='7601273bi' class='paragraph'>
+						 &nbsp;</span><span id='7601274bi' class='paragraph'>
+						 優波離問佛。是衣有何義故名迦絺那。佛告優波離。是衣名字爲迦絺那。優波離問佛。何者是迦絺那衣。答以是衣受迦絺那。問何者是迦絺那義。答衣名迦絺那義。生九心故名受迦絺那。八因縁故名捨迦絺那。&nbsp;</span><span id='7601275bi' class='paragraph'>
+						 問如佛所説。是迦絺那衣住處。名蔭覆。蔭覆義云何。答迦絺那衣住處蔭覆僧。得受衣物等施。&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601632bi' class='paragraph'>
+							&nbsp;</span><span id='7601633bi' class='paragraph'>
+						 &nbsp;</span><span id='7601635bi' class='paragraph'>
+						 &nbsp;</span><span id='8308941bi' class='generelltekst'>
+						 &nbsp;</span><span id='7601636bi' class='paragraph'>
+						 &nbsp;</span><span id='7601637bi' class='paragraph'>
+						 &nbsp;</span><span id='7601639bi' class='paragraph'>
+						 受迦絺那住處有十利。&nbsp;</span><span id='7601640bi' class='paragraph'>
+						 廣説如毘尼。著僧伽梨入聚落有五功徳。雨衣亦如是&nbsp;</span><span id='7601641bi' class='paragraph'>
+						 &nbsp;</span><span id='7601642bi' class='paragraph'>
+						 如世尊所説。住處利。云何住處利。謂得衣利。名住處利。&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600542bi' class='paragraph'>
+							mdor na |<br />brtad daṅ zla ba gsum pa daṅ ||<br />dus daṅ źig pa gyur pa (2) daṅ ||<br />gaṅ zag lṅa daṅ ma lta bu ||<br />gaṅ zag gsum gdiṅ ba ’byin pa tha ma’o ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601276bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601643bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600543bi' class='paragraph'>
+							brtad pa’i gos gtan par btiṅ na gtan pa btiṅ ba yin no źes gsuṅs na | brtad pa’i gos gaṅ lags | źag ’di tsam na skabs ’byed par ’gyur ba’i tshe rñed pa’o ||&nbsp;</span><span id='7600544bi' class='paragraph'>
+						 zla ba gsum (3) ’das nas gos rñed pa de gtan par btiṅ na gtan par btiṅ ba yin no źes gsuṅs na | zla ba gsum ’das pa’i gos gaṅ lags | &nbsp;</span><span id='7600545bi' class='paragraph'>
+						 gźi na ’khod pa <a class='fotnote cn' name='FN5510cn15' href='#N5510cn15'><sup>15</sup></a>
+ rnams kyis ni bcwa lṅa gyur | blo bur du yaṅ dge sloṅ maṅ źig lhags te de dag lta ba mthun pa yoṅs su dag pa de dag (4) gi ni ñin par bcu bźir gyur la | de ste gźi na ’khod pa ltar glo bur du lhags pa’i rnams byed na ni de’i tshe gos gaṅ rñed la de zla ba gsum ’das nas rñed pa’i gos yin te | de gtan par btiṅ na gtan par btiṅ ba źes bya’o ||&nbsp;</span><span id='7600547bi' class='paragraph'>
+						 dus kyi gos gtan par btiṅ na gtan par btiṅ ba (5) yin no źes gsuṅs na | dus kyi gos gaṅ lags | gos gaṅ dbyar gyi zla ba tha ma la rñed pa’o ||&nbsp;</span><span id='8404037bi' class='generelltekst'>
+						  &nbsp;</span><span id='7600548bi' class='paragraph'>
+						 gos źigs pa gtan par btiṅ na gtan par btiṅ ba ma yin no źes gsuṅs na | gos źigs pa gaṅ lags | gaṅ dge sloṅ gi lus las deṅs pa’o ||<a class='fotnote cn' name='FN5510cn16' href='#N5510cn16'><sup>16</sup></a>
+ &nbsp;</span><span id='7600549bi' class='paragraph'>
+						 gaṅ zag lṅas (6) gtan pa btiṅ na gtan pa btiṅ ba ma yin te | lṅa gaṅ źe na | &nbsp;</span><span id='7600550bi' class='paragraph'>
+						 dbyar med pa daṅ |  dbyar źig pa daṅ | dbyar phyi mar źugs pa daṅ | spaṅs pa daṅ | rjes su phyogs pa’o ||&nbsp;</span><span id='7600551bi' class='paragraph'>
+						 ma lta bu’i gźi las rnam pa ’di brgyad kyis na gtan pa phyuṅ bar ’gyur ro || mthun (7) par gzuṅ ba gaṅ | tha ma gñis kyi cha ma gtogs pa’i lhag ma rnams ni mthun par gzuṅ ba ma yin no ||&nbsp;</span><span id='7600553bi' class='paragraph'>
+						 bźi las ñuṅ bas gtan pa btiṅ na gtan pa btiṅ ba źes bgyi’am | ma btiṅ ba źes bya’o || de bźin du bźi po khyim pa’am | de bźin gśegs pa (227b1) la ṅan sems kyis khrag phyuṅ ba’i bar daṅ | bźi pos gtan pa btiṅ na btiṅ ba ma yin no ||&nbsp;</span><span id='7600555bi' class='paragraph'>
+						 gaṅ gi ñin par gtan pa btiṅ na de’i ñin par gsol ba daṅ las ma bgyis par phyuṅ bar ’gyur ba mchis sam | &nbsp;</span><span id='7600556bi' class='paragraph'>
+						 yod de | de ’di ltar gźi na gnas pa’i rnams kyis tshes bcu (2) drug la gtan pa btiṅ ba daṅ | glo bur du dge sloṅ maṅ źig lhags te | de dag kyaṅ yoṅs su dag la lta ba mthun | gnas mthun te de dag gis ni de ñin par tshes bcwa lṅa yin te | de na gźi na ’khod pa rnams kyis kyaṅ de dag de ltar byas te de’i ñin par gso sbyin byas (3) na gsol ba daṅ las ma byas par gtan pa phyuṅ bar ’gyur ro ||&nbsp;</span><div style='' id='17' class='note cn'>15.<a class="internt" name='N5510cn15' href='#FN5510cn15'> cf. gźi na gnas pa: skt. naivāsika</a>&nbsp; 16.<a class="internt" name='N5510cn16' href='#FN5510cn16'> cf. btsun pa gos źigs pa źig gtan par btiṅ na btiṅ ba źes bgyi’am | u pā li btiṅ ba źes bya ste | dge ’dun ni ’das pa daṅ bcas pa’o || in Upāliparipṛcchā</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601277bi' class='paragraph'>
+							問如佛所説。得用急施衣。令僧受作迦絺那衣。云何名急施衣。答十日未至自恣得衣物是名急施衣。&nbsp;</span><span id='7601278bi' class='paragraph'>
+						 &nbsp;</span><span id='7601279bi' class='paragraph'>
+						 &nbsp;</span><span id='7601281bi' class='paragraph'>
+						 問如佛所説。得時衣令僧受作迦絺那衣。云何名時衣。答若夏末月得衣物。是名時衣。&nbsp;</span><span id='8404039bi' class='generelltekst'>
+						 &nbsp;</span><span id='7601282bi' class='paragraph'>
+						 &nbsp;</span><span id='7601283bi' class='paragraph'>
+						 佛告優波離。五比丘不得作迦絺那衣人。何等五。&nbsp;</span><span id='7601284bi' class='paragraph'>
+						 一無歳。二破安居。三後安居。四擯。五別住。是名爲五。&nbsp;</span><span id='7601285bi' class='paragraph'>
+						 &nbsp;</span><span id='7601287bi' class='paragraph'>
+						 佛言。若減五人受迦絺那衣。不得名受迦絺那衣。若四比丘第五白衣。亦不名得受。若沙彌。非比丘。外道。不見擯人。不作擯人。不捨惡邪見擯人。不共住人。種種不共住人。自言我犯重罪人。若先來白衣。若汚比丘尼人。不能男人。越濟人。若殺父母阿羅漢。破僧惡心出佛身血人。如是等作第五人。不名受迦絺那衣。&nbsp;</span><span id='7601289bi' class='paragraph'>
+						 問頗有隨日受迦絺那衣。彼日捨不作羯磨。不得罪耶。&nbsp;</span><span id='7601290bi' class='paragraph'>
+						 答有。受迦絺那衣諸比丘。作十四日。客比丘來作十五日。若舊比丘隨客比丘。即日作布薩捨迦絺那衣無罪&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601644bi' class='paragraph'>
+							云何急施衣。謂十日未至。自恣得衣。是急施衣。用是作迦絺那衣受成受。&nbsp;</span><span id='7601645bi' class='paragraph'>
+						 如世尊所説。三月得衣。得受作迦絺那衣。云何三月衣。&nbsp;</span><span id='7601646bi' class='paragraph'>
+						 舊僧十五日自恣。客比丘來多同見同住。彼十四日自恣。若舊僧隨客比丘自恣。此日得衣。名三月得衣。用是衣作迦絺那衣。受成受。&nbsp;</span><span id='7601648bi' class='paragraph'>
+						 如佛所説。時衣得受作迦絺那衣云何時衣。自恣竟後一月得衣。是名時衣 &nbsp;</span><span id='8404040bi' class='generelltekst'>
+						 如佛所説。不淨衣不得受作迦絺那衣。云何不淨衣。謂死比丘衣。&nbsp;</span><span id='7601649bi' class='paragraph'>
+						 &nbsp;</span><span id='7601650bi' class='paragraph'>
+						 五種人受迦絺那衣。不名受云何五。&nbsp;</span><span id='7601651bi' class='paragraph'>
+						 謂無臘人。破安居人。後安居人。餘處安居人。擯人。&nbsp;</span><span id='7601652bi' class='paragraph'>
+						 八種捨迦絺那衣。幾共幾不共。除後二種。餘者不共。&nbsp;</span><span id='7601654bi' class='paragraph'>
+						 &nbsp;</span><span id='7601656bi' class='paragraph'>
+						 問有即日受迦絺那衣。即日捨不作白羯磨耶。&nbsp;</span><span id='7601657bi' class='paragraph'>
+						 舊比丘十六日受迦絺那衣。客比丘來多相向説捨&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600559bi' class='paragraph'>
+							mdor na |<br />ji tsam gyis ni dge ’dun la ||<br />de yi tshul la rnam pa gsum ||<br />gźan gyis gźan la bde ba daṅ ||<br />dge sloṅ rnams kyi gso sbyin no ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601293bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601660bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600560bi' class='paragraph'>
+							ji tsam gyis na dge ’dun gyi dbyen bgyis pa’i gaṅ zag (4) lags | &nbsp;</span><span id='8660332bi' class='generelltekst'>
+						 de bźin gśegs pa’i ñan thos ’dus pa’i dge ’dun phye na mnar med pa’i kha na ma tho ba thob par ’gyur la de mtshams med pa’i kha na ma tho ba’i las su yaṅ ’gyur ro ||&nbsp;</span><span id='7600561bi' class='paragraph'>
+						 u pā li ’di lta ste | dge sloṅ gis chos ma yin pa la chos bźin ma yin pa’i ’du (5) śes kyis rgyas par te rnam pa bcwa brgyad du ji ltar ’dul ba las ’byuṅ ba bźin no ||&nbsp;</span><span id='7600562bi' class='paragraph'>
+						 gaṅ dge ’dun gyi dbyen bgyis pa de thams cad dge ’dun ’khrugs pa lags sam | gaṅ dge ’dun ’khrugs pa de thams cad dge ’dun gyi dbyen lags |&nbsp;</span><span id='7600563bi' class='paragraph'>
+						 dge ’dun gyi dbyen yin la (6) ’khrug pa ma yin par ’gyur pa rnam pa bźir sbyar ba yaṅ yod do ||&nbsp;</span><span id='7600564bi' class='paragraph'>
+						 dge ’dun gyi dbyen yin la ’khrug pa ma yin par ’gyur ba gaṅ źe na |&nbsp;</span><span id='7600565bi' class='paragraph'>
+						 de ’di ltar dge ’dun phye bar ni gyur la dge ’dun gyi dbyen du ’gyur ba’i dṅos po bcu bźi ni ma bzuṅ bar gyur pa’o || de ni dge (7) ’dun phye ba yin te dge ’dun ’khrug pa ni ma yin no ||&nbsp;</span><span id='7600566bi' class='paragraph'>
+						 dge ’dun ’khrugs par gyur la dge ’dun phye ba ma yin pa gaṅ źe na |&nbsp;</span><span id='8717650bi' class='generelltekst'>
+						 de 'di ltar dge 'dun gyi dbyen du 'gyur ba'i dṅos po bcu bźi bzuṅ bar gyur pa de ni dge 'dun 'khrugs par gyur gyi dge 'dun gyi dbyen ma yin pa’o || &nbsp;</span><span id='8717655bi' class='generelltekst'>
+						 dge 'dun 'khrugs la dge 'dun bye bar yaṅ gyur pa ni | de 'di ltar dge 'dun phye bar yaṅ gyur la dbyen du 'gyur ba'i dṅos po bcu bźi yaṅ śin tu ṅes par bzuṅ ba de ni dge 'dun phye la dge 'dun 'khrugs par gyur pa’o || &nbsp;</span><span id='7600570bi' class='paragraph'>
+						 dge (2) ’dun gyi dbyen yaṅ ma yin la ’khrugs par yaṅ ma gyur pa gaṅ źe na | rnam pa de dag ma gtogs pa’o ||&nbsp;</span><span id='7600571bi' class='paragraph'>
+						 gaṅ dge ’dun bye ba’i dge ’dun de thams cad tha dad du gyur pa lags sam | gaṅ dge ’dun tha dad du gyur pa de thams cad dge ’dun bye ba lags |&nbsp;</span><span id='7600573bi' class='paragraph'>
+						 dge ’dun (3) bye la dge ’dun tha dad du ma gyur ba’aṅ yod de | rnam pa bźir sbyar ro ||&nbsp;</span><span id='7600575bi' class='paragraph'>
+						 dris pa | dge ’dun bye la dge ’dun tha dad du ma gyur pa gaṅ źe na |&nbsp;</span><span id='8743760bi' class='generelltekst'>
+						 de ’di ltar dge ’dun bye bar ni gyur na dge ’dun gnas tha dad pa’am | gos tha dad du gyur pa med pa de ni dge ’dun bye mod kyi (4) dge ’dun tha dad du gyur pa ma yin no ||&nbsp;</span><span id='7600576bi' class='paragraph'>
+						 dge ’dun tha dad du gyur la dge ’dun ma bye ba gaṅ źe na | &nbsp;</span><span id='8743765bi' class='generelltekst'>
+						 ’di ltar dge ’dun gñis tha dad du gyur pa nas rgyas par te | dge ’dun bye bar ma gyur pa’i bar du dge ’dun tha dad du gyur mod kyi ma bye ba’o ||&nbsp;</span><span id='7600577bi' class='paragraph'>
+						 dge ’dun bye la dge ’dun tha (5) dad du’aṅ spyod pa gaṅ źe na | &nbsp;</span><span id='7600578bi' class='paragraph'>
+						 de ’di ltar dge ’dun de dag bye bar yaṅ gyur la | dge ’dun gñis su gnas kyis tha dad pa’am | mtshams kyis tha dad pa’am | rñed pa tha dad pa’am | gos tha dad par spyod par gyur pa de ni dge ’dun bye la dge ’dun tha dad du gyur pa (6) yin no ||&nbsp;</span><span id='7600579bi' class='paragraph'>
+						 dge ’dun bye ba’aṅ med la dge ’dun tha dad du’aṅ gyur pa yaṅ ma yin pa gaṅ źe na | rnam pa de lta bu ma gtogs pa’o ||&nbsp;</span><span id='7600580bi' class='paragraph'>
+						 gaṅ dge ’dun bye ba de thams cad dge ’dun so sor gyur pa lags la gaṅ dge ’dun so sor gyur pa de thams cad dge ’dun bye bar (7) ’gyur ram | &nbsp;</span><span id='8743770bi' class='generelltekst'>
+						 dge ’dun bye la dge ’dun tha dad du gyur pa’aṅ ma yin pa’aṅ yod de | de yaṅ rnam pa bźir sbyar ro ||&nbsp;</span><span id='7600581bi' class='paragraph'>
+						 dge ’dun bye la tha dad du gyur pa ma yin pa gaṅ źe na | &nbsp;</span><span id='8743775bi' class='generelltekst'>
+						 de ’di ltar dge ’dun bye bar gyur kyaṅ dge ’dun gñis gnas las so so’am | gos las (228b1) so sor spyod pa med pa de ni<a class='fotnote cn' name='FN5510cn17' href='#N5510cn17'><sup>17</sup></a>
+ dge ’dun bye mod kyi dge ’dun tha dad du gnas pa ma yin no ||&nbsp;</span><span id='7600582bi' class='paragraph'>
+						 dge ’dun tha dad du gyur ciṅ dge ’dun ma bye ba gaṅ źe na |&nbsp;</span><span id='8743780bi' class='generelltekst'>
+						 de ’di ltar dge ’dun gñis gnas daṅ mtshams daṅ rñed pa so sor gyur pa de ni dge ’dun tha dad du gyur ciṅ dge ’dun bye ba ma yin (2) pa’o | | &nbsp;</span><span id='8743785bi' class='generelltekst'>
+						 dge ’dun bye la dge ’dun tha dad du gyur pa gaṅ źe na | &nbsp;</span><span id='8743790bi' class='generelltekst'>
+						 de ’di ltar dge ’dun bye bar yaṅ gyur la | gñis gnas tha dad du ’khod pa la sogs pa sṅa ma bźin no ||&nbsp;</span><span id='7600583bi' class='paragraph'>
+						 dge ’dun bye ba’aṅ ma yin la dge ’dun tha dad du gnas pa yaṅ ma yin pa gaṅ źe na | rnam pa de lta bu (3) ma gtogs pa’o ||&nbsp;</span><span id='7600584bi' class='paragraph'>
+						 dge ’dun bye nas tha dad du spyod pa las phyogs gcig gam gñis pos mtshams bkrol na bkrol ba źes bgyi’am | &nbsp;</span><span id='8798642bi' class='generelltekst'>
+						 de ste chos bźin smra bas bkrol na ni bkrol ba źes bya’o ||&nbsp;</span><span id='7600585bi' class='paragraph'>
+						 dge ’dun phye nas phyogs so sor gnas śiṅ ’khod na dge sloṅ ma rnams (4) kyis gso sbyin bgyi’am | bya’o || de ci’i phyir źe na | dge sloṅ ma daṅ dge sloṅ rnams so sor gnas pa’i phyir ro ||&nbsp;</span><div style='' id='18' class='note cn'>17.<a class="internt" name='N5510cn17' href='#FN5510cn17'> maṅ ba de ni DQ: med pa de ni S: med pa de ni | V.</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601294bi' class='paragraph'>
+							問云何得破僧罪。&nbsp;</span><span id='8660334bi' class='generelltekst'>
+						  (However, see the next record)&nbsp;</span><span id='7601295bi' class='paragraph'>
+						 答若人非法知是非法。邪見故壞僧。如是得破僧罪。又非法謂是法。邪見故壞僧。得破僧罪。又非法中疑邪見故壞僧。得破僧罪。&nbsp;</span><span id='7601296bi' class='paragraph'>
+						 問所有破僧。皆是僧諍聲耶。所有僧諍聲。皆是破僧耶。&nbsp;</span><span id='7601297bi' class='paragraph'>
+						 答或有破僧。無僧諍聲。或有僧諍聲非破僧。或有破僧亦僧諍聲。或非破僧無僧諍聲。&nbsp;</span><span id='7601298bi' class='paragraph'>
+						 問云何破僧無僧諍聲。&nbsp;</span><span id='7601299bi' class='paragraph'>
+						 答若僧壞爲二部。未受十四破僧事。是名破僧無僧諍聲。&nbsp;</span><span id='7601300bi' class='paragraph'>
+						 云何僧諍聲非破僧。&nbsp;</span><span id='8717652bi' class='generelltekst'>
+						 答若諸比丘。執是十四破僧事僧未作二部。是名僧諍聲非破僧。&nbsp;</span><span id='8717657bi' class='generelltekst'>
+						 云何破僧亦僧諍聲。答若僧壞爲二部。受十四破僧事。是名破僧亦僧諍聲。&nbsp;</span><span id='7601304bi' class='paragraph'>
+						 云何非破僧亦非僧諍聲。答除上爾所事。&nbsp;</span><span id='7601305bi' class='paragraph'>
+						 問所有破僧。皆是別離僧耶。所有別離僧。皆是破僧耶。&nbsp;</span><span id='7601307bi' class='paragraph'>
+						 答或有破僧非是別離。或有別離非是破僧。或有破僧亦是別離。或非破僧亦非別離。&nbsp;</span><span id='7601309bi' class='paragraph'>
+						 云何破僧非是別離。&nbsp;</span><span id='8743762bi' class='generelltekst'>
+						 答若僧破共一處住。是名破僧非是別離。&nbsp;</span><span id='7601310bi' class='paragraph'>
+						 云何別離非是破僧。&nbsp;</span><span id='8743767bi' class='generelltekst'>
+						 答若二衆別異住。異地異界異施異衣。是名別離非是破僧。&nbsp;</span><span id='7601311bi' class='paragraph'>
+						 云何破僧亦是別離&nbsp;</span><span id='7601312bi' class='paragraph'>
+						 答若衆僧壞爲二部。別異住異地異界異施異衣。是名破僧亦是別離。&nbsp;</span><span id='7601313bi' class='paragraph'>
+						 云何非破僧亦非別離。答除上爾所事。&nbsp;</span><span id='7601314bi' class='paragraph'>
+						 問所有破僧。皆是僧別異耶。有僧別異。皆是破僧耶。&nbsp;</span><span id='8743772bi' class='generelltekst'>
+						 答或有破僧。非僧別異。或僧別異。非是破僧。或有破僧亦僧別異。或非破僧非僧別異。&nbsp;</span><span id='7601315bi' class='paragraph'>
+						 云何破僧非僧別異。&nbsp;</span><span id='8743777bi' class='generelltekst'>
+						 答若僧破未別異住。未異地異界異施異衣。是名破僧非是別異。&nbsp;</span><span id='7601316bi' class='paragraph'>
+						 云何別異非是破僧。&nbsp;</span><span id='8743782bi' class='generelltekst'>
+						 答若僧不破。別異住異地異界異施異衣。是名別異非是破僧。&nbsp;</span><span id='8743787bi' class='generelltekst'>
+						 云何破僧亦是別異。&nbsp;</span><span id='8743792bi' class='generelltekst'>
+						 答若衆僧破爲二部別住。異地異施異界異衣。是名破僧亦是別異。&nbsp;</span><span id='7601317bi' class='paragraph'>
+						 云何非破僧亦非別異。答除上爾所事。&nbsp;</span><span id='7601318bi' class='paragraph'>
+						 問若僧破爲二部。若一部捨界。可得捨不&nbsp;</span><span id='8798644bi' class='generelltekst'>
+						 答如法者捨。得名捨。&nbsp;</span><span id='7601319bi' class='paragraph'>
+						 問若衆僧破。比丘尼應作布薩不。答應作布薩。比丘尼不同事故。&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601661bi' class='paragraph'>
+							云何破僧。&nbsp;</span><span id='8660335bi' class='generelltekst'>
+						 得無間墮阿鼻地獄。&nbsp;</span><span id='7601662bi' class='paragraph'>
+						 非法非法想破僧&nbsp;</span><span id='7601663bi' class='paragraph'>
+						 僧或破僧一切受法耶。或受法一切破僧耶。&nbsp;</span><span id='7601664bi' class='paragraph'>
+						 答或破僧非受法作四句&nbsp;</span><span id='7601665bi' class='paragraph'>
+						 云何破僧非受法。&nbsp;</span><span id='7601666bi' class='paragraph'>
+						 若破僧不受十四事。&nbsp;</span><span id='7601667bi' class='paragraph'>
+						 云何受法非破僧。&nbsp;</span><span id='8717653bi' class='generelltekst'>
+						 謂受十四事。&nbsp;</span><span id='8717658bi' class='generelltekst'>
+						 倶者亦受十四事亦破僧。&nbsp;</span><span id='7601671bi' class='paragraph'>
+						 非受十四法非破僧。除是句。&nbsp;</span><span id='7601672bi' class='paragraph'>
+						 &nbsp;</span><span id='7601674bi' class='paragraph'>
+						 &nbsp;</span><span id='7601676bi' class='paragraph'>
+						 &nbsp;</span><span id='8743763bi' class='generelltekst'>
+						 &nbsp;</span><span id='7601677bi' class='paragraph'>
+						 &nbsp;</span><span id='8743768bi' class='generelltekst'>
+						 &nbsp;</span><span id='7601678bi' class='paragraph'>
+						 &nbsp;</span><span id='7601679bi' class='paragraph'>
+						 &nbsp;</span><span id='7601680bi' class='paragraph'>
+						 &nbsp;</span><span id='7601681bi' class='paragraph'>
+						 &nbsp;</span><span id='8743773bi' class='generelltekst'>
+						 &nbsp;</span><span id='7601682bi' class='paragraph'>
+						 &nbsp;</span><span id='8743778bi' class='generelltekst'>
+						 &nbsp;</span><span id='7601683bi' class='paragraph'>
+						 &nbsp;</span><span id='8743783bi' class='generelltekst'>
+						 &nbsp;</span><span id='8743788bi' class='generelltekst'>
+						 &nbsp;</span><span id='8743793bi' class='generelltekst'>
+						 &nbsp;</span><span id='7601684bi' class='paragraph'>
+						 &nbsp;</span><span id='7601685bi' class='paragraph'>
+						 僧壞時捨界成捨不&nbsp;</span><span id='8798645bi' class='generelltekst'>
+						 法語者捨成捨。&nbsp;</span><span id='7601686bi' class='paragraph'>
+						 僧壞時比丘尼得作布薩不。得作布薩&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600587bi' class='paragraph'>
+							mdor na |<br />gzu bo las ni gñis su bya ||<br />spaṅs pa de yaṅ grogs med pa ||<br />spaṅs par gyur ba mi śes na ||<br />rjes su phyogs daṅ spyod pa daṅ ||<br />dbyen byed (5) rjes su ’jug pa’o ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601321bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601688bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600588bi' class='paragraph'>
+							dge ’dun phye nas phyogs daṅ phyogs ma yin par gnas na gzu bo rnams kyis ji lta bur bgyi |&nbsp;</span><span id='7600589bi' class='paragraph'>
+						 mtshams kyi phyi rol du doṅ la gso sbyin byos śig | &nbsp;</span><span id='8798647bi' class='generelltekst'>
+						 dge ’dun bye nas phyogs daṅ phyogs mtshams par ’khod nas dge sloṅ ma la bston pa sus bgyi |&nbsp;</span><span id='7600590bi' class='paragraph'>
+						 chos (6) bźin smras pas so || de ste chos bźin smra ba gzu bo rnams kyis mtshams kyi phyi rol du deṅ la ston cig | &nbsp;</span><span id='7600591bi' class='paragraph'>
+						 spaṅs pa’i rjes su phyogs na ñes pa cir ’gyur |&nbsp;</span><span id='7600592bi' class='paragraph'>
+						 gñis la ni ñes byas so || gcig la ni ltuṅ ba’o ||&nbsp;</span><span id='7600594bi' class='paragraph'>
+						 spaṅs pa daṅ spaṅs pa grogs dag bcas pa źes bgyi’am | grogs (7) ma mchis bźes bgyi |&nbsp;</span><span id='7600595bi' class='paragraph'>
+						 spaṅs pa ni thams cad kyaṅ gcig pu ste gñis su ma yin pa grogs med pa źes bya’o ||&nbsp;</span><span id='7600596bi' class='paragraph'>
+						 spaṅs pa daṅ lhan cig tu spyod par bgyi’am | mi spyad par bgyi | spaṅs pa ni thams cad daṅ lhan cig tu mi spyad par bya’o ||&nbsp;</span><span id='7600597bi' class='paragraph'>
+						 gaṅ spaṅs par ma ’tshal na de daṅ (229a1) lhan cig spyod par bgyi’am | gaṅ la spaṅs par mi śes na de daṅ lhan cig gnas | lhan cig spyad kyaṅ ñes pa med do ||&nbsp;</span><span id='7600598bi' class='paragraph'>
+						 ñe bar phyogs pa daṅ ñe bar ma phyogs pa lhan cig tu spyod na ñes byas su ’gyur ro || ñe bar ma phyogs pa daṅ ñe bar phyogs pa daṅ (2) lhan cig tu spyod na ñes byas su ’gyur ro || dbyen byed pa’i rjes su phyogs pa gaṅ zag bźi yod na dge ’dun bye ba źes bya’o ||&nbsp;</span><span id='7600601bi' class='paragraph'>
+						 ji tsam gyis na dge ’dun gyi dbyen du ’gyur | skye bo bźi dbyen byed pa’i rjes su phyogs par gyur pa’o ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601322bi' class='paragraph'>
+							問若衆僧破。闥頼吒比丘云何應布薩。&nbsp;</span><span id='7601323bi' class='paragraph'>
+						 答是闥頼吒比丘。應出界作布薩説戒。&nbsp;</span><span id='8798649bi' class='generelltekst'>
+						 &nbsp;</span><span id='7601324bi' class='paragraph'>
+						 答應從如法部受。若無如法。闥頼吒比丘應出界教化。&nbsp;</span><span id='7601325bi' class='paragraph'>
+						 問三擯比丘。一比丘隨順供給。得何罪。&nbsp;</span><span id='7601326bi' class='paragraph'>
+						 答是比丘。得二突吉羅一波夜提。&nbsp;</span><span id='7601328bi' class='paragraph'>
+						 問擯比丘名爲獨。名爲有伴黨耶。&nbsp;</span><span id='7601329bi' class='paragraph'>
+						 答一切擯比丘。名爲獨。無有伴黨。&nbsp;</span><span id='7601330bi' class='paragraph'>
+						 &nbsp;</span><span id='7601331bi' class='paragraph'>
+						 問比丘擯未決定。應共住同事不。答若共住同事無罪。&nbsp;</span><span id='7601332bi' class='paragraph'>
+						 問受法比丘。得與不受法比丘作羯磨不。答不得。不受法比丘。得與受法比丘作羯磨不。答不得。若有一擯比丘。四比丘隨順。名破僧不。答名破僧。&nbsp;</span><span id='7601335bi' class='paragraph'>
+						 何以故。衆僧擯是人。而四比丘隨順故。&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601689bi' class='paragraph'>
+							僧破時闥頼吒比丘當云何。&nbsp;</span><span id='7601690bi' class='paragraph'>
+						 當在如法衆。不得遣信。至第二衆僧壞時。教誡比丘尼。不如法語者應教誡。無法語者不應教闥頼吒。應出界外教誡。&nbsp;</span><span id='8798650bi' class='generelltekst'>
+						 See the previous record &nbsp;</span><span id='7601691bi' class='paragraph'>
+						 See the previous record (two records ahead)&nbsp;</span><span id='7601692bi' class='paragraph'>
+						 若比丘隨順擯比丘。&nbsp;</span><span id='7601693bi' class='paragraph'>
+						 犯突吉羅。&nbsp;</span><span id='7601695bi' class='paragraph'>
+						 被擯人爲獨爲有伴耶。&nbsp;</span><span id='7601696bi' class='paragraph'>
+						 獨無伴侶。&nbsp;</span><span id='7601697bi' class='paragraph'>
+						 被擯人不得共食。&nbsp;</span><span id='7601698bi' class='paragraph'>
+						 若不知被擯共食共住。不犯。&nbsp;</span><span id='7601699bi' class='paragraph'>
+						 受法比丘共不受法比丘共食不犯。不受法比丘共受法比丘共食。犯突吉羅。四人隨順破僧。是名破僧。&nbsp;</span><span id='7601702bi' class='paragraph'>
+						 See the previous record&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600603bi' class='paragraph'>
+							mdor na |<br />de ’dra ba daṅ dad pa daṅ ||<br />(3) chos daṅ chos bźin ’dra ba daṅ ||<br />ñes las dbyuṅ ba spaṅs pa daṅ ||<br />dbyen par mthoṅ daṅ yan lag go ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601337bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601704bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600604bi' class='paragraph'>
+							btsun pa bcom ldan ’das kyis de ’dra ba’i dge sloṅ spaṅ bar ma byed cig ces gsuṅs na | de ’dra ba’i dge sloṅ gaṅ lags | &nbsp;</span><span id='7600605bi' class='paragraph'>
+						 dge sloṅ gaṅ grags pa | bsod (4) nams che ba | maṅ du thos pa’o || mdo sde ’dzin pa | ’dul ba ’dzin pa | ma lta bu ’dzin pa | g-yog maṅ ba | ’khor maṅ ba | de lta bu ni de ’dra ba’i dge sloṅ źes bya’o ||&nbsp;</span><span id='7600606bi' class='paragraph'>
+						 de ’dra ba’i dge sloṅ spaṅs na ltuṅ ba cir ’gyur |<a class='fotnote cn' name='FN5510cn18' href='#N5510cn18'><sup>18</sup></a>
+ ñes byas so || de ste dbye ba’i de gaṅ lags<a class='fotnote cn' name='FN5510cn19' href='#N5510cn19'><sup>19</sup></a>
+  | &nbsp;</span><span id='8825602bi' class='generelltekst'>
+						 de la (5) dad pa’i dge sloṅ źes ni ṅas dgoṅs te gsuṅs na dad pa’i dge sloṅ gi tshig bźin du ñes pa chos bźin slar byos śig | bram ze dad pa zer ba ltar | dge sloṅ gis ñes pa chos bźin ma byas na ñes byas su ’gyur ro ||&nbsp;</span><span id='8825612bi' class='generelltekst'>
+						 chos bźin du smra ba'i dge sloṅ stan gyi bar du 'dug śig ces gsuṅs na chos bźin du smra ba gaṅ lags | 
+&nbsp;</span><span id='8825607bi' class='generelltekst'>
+						 gaṅ ñes pa gcig la gcig pu<a class='fotnote cn' name='FN5510cn20' href='#N5510cn20'><sup>20</sup></a>
+ sñol ba daṅ | ’byuṅ bar stsol pa daṅ | phyag ’tshal bar ston pa’o ||&nbsp;</span><span id='7600609bi' class='paragraph'>
+						 dge ’dun bye nas phyogs ma yin par gnas na | gtan pa btiṅ ba sus dbyuṅ bar bgyi | &nbsp;</span><span id='8825617bi' class='generelltekst'>
+						 chos bźin du smra ba (7) dag gis dbyuṅ ṅo ||&nbsp;</span><span id='7600610bi' class='paragraph'>
+						 spaṅs pa’i dge sloṅ dag spu ñal ba daṅ | dbyuṅ bar stsol pa daṅ | phyag ’tshal bar ston par bgyid na | de dag sus bzod par gsol bar bgyi | &nbsp;</span><span id='8825622bi' class='generelltekst'>
+						 gaṅ spaṅs pa daṅ rjes su soṅ bas so ||&nbsp;</span><span id='7600611bi' class='paragraph'>
+						 śā ri’i bu mal stan rnams ni rigs par ’gos (229b1) śig ces gsuṅs na | rigs pa de gaṅ lags | &nbsp;</span><span id='8825627bi' class='generelltekst'>
+						 de ni phyogs gcig tu rigs par byas pa’o ||&nbsp;</span><span id='7600612bi' class='paragraph'>
+						 skra brgyar gyes pa’i yan lag gi dum bu tshol la sbyor cig | so sor dbye bar ni ma byed cig ces gsuṅs na de skad du gsuṅs pa’i don gaṅ |&nbsp;</span><span id='8825632bi' class='generelltekst'>
+						 yan lag gi dum bu ni (2) dad pa blaṅ ba’o || yan lag btsal bar bya | dum bu btsal bar bya | dge ’dun ’dus pa btsal bar bya’i dbyen du ’gyur ba la ni ’jug par mi bya’o ||&nbsp;</span><span id='8829925bi' class='generelltekst'>
+						  &nbsp;</span><div style='' id='19' class='note cn'>18.<a class="internt" name='N5510cn18' href='#FN5510cn18'> cir ’gyur DV: cir ’gyur | QS.</a>&nbsp; 19.<a class="internt" name='N5510cn19' href='#FN5510cn19'> This sentence doesn't fit to any other versions. Furthermore, considering that this is Upāli's question and the next sentence is also Upāli's question, the meaning of this sentence doesn't fit as well.</a>&nbsp; 20.<a class="internt" name='N5510cn20' href='#FN5510cn20'> pu DQ: spu SV.</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601338bi' class='paragraph'>
+							問如佛所説。如是人不應作不見擯。如是人若欲作不見擯時。得偸蘭遮。何以故。近破僧因縁故。云何名如是人。&nbsp;</span><span id='7601339bi' class='paragraph'>
+						 答知是大徳人若多知多識多聞大徳明。解修妬路毘尼阿毘曇義。是故説名。&nbsp;</span><span id='7601340bi' class='paragraph'>
+						 如是人。不應與作不見。擯若與作不見。擯者得偸蘭遮。近破僧故。&nbsp;</span><span id='8825604bi' class='generelltekst'>
+						 問如佛所説。用可信比丘語應見罪。云何名可信。答從可信語比丘邊聞。亦自信是罪。&nbsp;</span><span id='8825614bi' class='generelltekst'>
+						 問如佛所説。若僧欲破。應次第空一床處敷獨坐床。知法者應作諸羯磨。及教化比丘尼。是中云何成法。&nbsp;</span><span id='8825609bi' class='generelltekst'>
+						 答若諸比丘共心悔知罪。互相恭敬禮拜問訊是&nbsp;</span><span id='7601343bi' class='paragraph'>
+						 &nbsp;</span><span id='8825619bi' class='generelltekst'>
+						 &nbsp;</span><span id='7601344bi' class='paragraph'>
+						 No Chinnese&nbsp;</span><span id='8825624bi' class='generelltekst'>
+						 &nbsp;</span><span id='7601345bi' class='paragraph'>
+						  &nbsp;</span><span id='8825629bi' class='generelltekst'>
+						 &nbsp;</span><span id='7601346bi' class='paragraph'>
+						 問如佛所説。若破一毛爲百分。當如是細求和合衆僧因縁。莫求破僧因縁。問云何名細求。&nbsp;</span><span id='8825634bi' class='generelltekst'>
+						 答應求語言。應求義趣。應分別籌量細求和合僧因縁。莫求破僧因縁。&nbsp;</span><span id='8829927bi' class='generelltekst'>
+						 若擯比丘心悔知罪。恭敬禮拜衆僧。諸比丘將界外解擯。得解擯不。答得解擯。諸比丘得罪。&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601705bi' class='paragraph'>
+							如佛所説。如是比丘不得擯。云何如是比丘。&nbsp;</span><span id='7601706bi' class='paragraph'>
+						 若比丘有大威徳。持修多羅。毘尼。摩得勒伽。多聞多知識多眷屬。&nbsp;</span><span id='7601707bi' class='paragraph'>
+						 擯如是人。犯偸羅遮。&nbsp;</span><span id='8825605bi' class='generelltekst'>
+						 有信樂比丘。應出罪。云何信樂。若聞若信語。使懺悔。若不懺悔。犯突吉羅。&nbsp;</span><span id='8825615bi' class='generelltekst'>
+						 &nbsp;</span><span id='8825610bi' class='generelltekst'>
+						 &nbsp;</span><span id='7601710bi' class='paragraph'>
+						 若僧壞誰應捨迦絺那衣&nbsp;</span><span id='8825620bi' class='generelltekst'>
+						 法語者應捨&nbsp;</span><span id='7601711bi' class='paragraph'>
+						 被擯人下意隨順調伏。應捨羯磨。不應捨羯磨。&nbsp;</span><span id='8825625bi' class='generelltekst'>
+						 See the previous record&nbsp;</span><span id='7601712bi' class='paragraph'>
+						 同意比丘應與臥具。云何同意。&nbsp;</span><span id='8825630bi' class='generelltekst'>
+						 寂靜不相惱。名同意。&nbsp;</span><span id='7601713bi' class='paragraph'>
+						 &nbsp;</span><span id='8825635bi' class='generelltekst'>
+						 &nbsp;</span><span id='8829928bi' class='generelltekst'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600615bi' class='paragraph'>
+							mdor na |<br />kau śām bī yi phyogs gñis daṅ ||<br />gso sbyin daṅ ni chos gos daṅ ||<br />kau śām bī yi phyogs gcig daṅ ||<br />(3) yaṅs pa can gyi gzu bo ste ||<br />gzu bos kyaṅ ni phyogs gñis su ||<br />yaṅs pa can gyi gzu bo’o ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601349bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601716bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600616bi' class='paragraph'>
+							kau śām bī’i phyogs gñis po gcig tu ’dus nas gso sbyin la źugs na gzu bo rnams kyis ji ltar ’tshal cig | mtshams kyi phyi rol du deṅ la gso sbyin byos śig | kau śā ma (4) bī’i phyogs gñis ka gcig tu ’dus śiṅ ’khod pa la de na mi źig gis dge ’dun la gos phul na de gaṅ dbaṅ | &nbsp;</span><span id='8829920bi' class='generelltekst'>
+						 gnas brtan gaṅ na ’dug pa dbaṅ ṅo ||&nbsp;</span><span id='7600617bi' class='paragraph'>
+						 phyogs gcig na ni gnas brtan mchis | phyogs gcig na ni gnas brtan ’og ma mchis na gaṅ dbaṅ |&nbsp;</span><span id='7600618bi' class='paragraph'>
+						 de gñis (5) las gaṅ la chu rgyun brims pa de dbaṅ ṅo ||&nbsp;</span><span id='7600619bi' class='paragraph'>
+						 thams cad kyis ji ltar bgo bar bgyi |&nbsp;</span><span id='7600620bi' class='paragraph'>
+						 gaṅ la thob pa de rnams la rim bźin du’o ||&nbsp;</span><span id='7600621bi' class='paragraph'>
+						 yul yaṅs pa can daṅ kau śām bī pa gñis lhan cig gso sbyin bgyid na bgyis pa źes bgyi’am | u pā li ma yin no ||&nbsp;</span><span id='7600622bi' class='paragraph'>
+						 gzu bo rnams kau śām (6) bī pa daṅ gso sbyin bgyis na bgyis pa źes bgyi’am | u pā li ma yin no ||&nbsp;</span><span id='7600623bi' class='paragraph'>
+						 gzu bo rnams yaṅ pa can pa daṅ dag gso sbyin bgyis na bgyis bźes bgyi’am | u pā li ma yin no ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601350bi' class='paragraph'>
+							&nbsp;</span><span id='8829922bi' class='generelltekst'>
+						 &nbsp;</span><span id='7601351bi' class='paragraph'>
+						 &nbsp;</span><span id='7601352bi' class='paragraph'>
+						  &nbsp;</span><span id='7601353bi' class='paragraph'>
+						 &nbsp;</span><span id='7601354bi' class='paragraph'>
+						 &nbsp;</span><span id='7601355bi' class='paragraph'>
+						 No Chinse&nbsp;</span><span id='7601356bi' class='paragraph'>
+						 &nbsp;</span><span id='7601357bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601717bi' class='paragraph'>
+							毘耶離倶舍彌。比丘集一處。闥頼吒當云何闥頼吒應出界外作布薩&nbsp;</span><span id='8829923bi' class='generelltekst'>
+						 &nbsp;</span><span id='7601718bi' class='paragraph'>
+						 &nbsp;</span><span id='7601719bi' class='paragraph'>
+						 &nbsp;</span><span id='7601720bi' class='paragraph'>
+						 &nbsp;</span><span id='7601721bi' class='paragraph'>
+						 &nbsp;</span><span id='7601722bi' class='paragraph'>
+						 倶舍彌毘耶離比丘共布薩。成布薩不。不成布薩。&nbsp;</span><span id='7601723bi' class='paragraph'>
+						 &nbsp;</span><span id='7601724bi' class='paragraph'>
+						 若闥頼吒比丘共毘耶離比丘共布薩。成布薩不。成布薩&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600624bi' class='paragraph'>
+							mdor na |<br />gaṅ gis dus su bye bar gyur ||<br />sriṅ mo rnams la’aṅ rjes bsgrags pa ||<br />&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601358bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601725bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600625bi' class='paragraph'>
+							(7) phyogs daṅ dge sloṅ ma'i<a class='fotnote cn' name='FN5510cn21' href='#N5510cn21'><sup>21</sup></a>
+ dge 'dun daṅ | gaṅ gi dus su kau śām bī’i dge ’dun rnams bye bar gyur |&nbsp;</span><span id='7600626bi' class='paragraph'>
+						 gaṅ gi tshe de dag<a class='fotnote cn' name='FN5510cn22' href='#N5510cn22'><sup>22</sup></a>
+ mtshams kyi naṅ du gso sbyin tha dad du byas pa na’o ||&nbsp;</span><span id='7600627bi' class='paragraph'>
+						 gaṅ gis dus su dge sloṅ gaṅ gis | kau śā ma bī’i dge sloṅ phye |&nbsp;</span><span id='7600629bi' class='paragraph'>
+						 chos bźin smra ba ma yin pa dag (230a1) gis te | mtshams kyi naṅ du lhan cig gnas pa las gso sbyin tha dad du byas pas so ||&nbsp;</span><span id='7600631bi' class='paragraph'>
+						 dge sloṅ ma’i dge ’dun kyaṅ phye nas tha dad du gnas pa źes bya’o || &nbsp;</span><span id='7600632bi' class='paragraph'>
+						 ci dge sloṅ ma’i dge ’dun bye ba la zla ba phyed phyed ciṅ luṅ bstan par bgyi’am |&nbsp;</span><span id='7600633bi' class='paragraph'>
+						 bcom ldan (2) ’das kyis bka’ stsal pa | bstan par mi bya ste | sriṅ mo’i rnams mthun par gyis śig ces sṅar bsgo bar bya’o ||&nbsp;</span><span id='7600634bi' class='paragraph'>
+						 rnam pa gñis kyi phyir dge ’dun bye ba rjes su bsgrags pa daṅ tshul śiṅ brims pa lags so źes gsuṅs na | gaṅ gis dbye źiṅ gnod par brtsams te rjes (3) su bsgrags sam tshul śiṅ brims pa las blaṅs na | dge ’dun bye ba źes bgyi’am | u pā li ma yin no ||&nbsp;</span><span id='8843279bi' class='generelltekst'>
+						  &nbsp;</span><span id='7600635bi' class='paragraph'>
+						 las bgyid pa la cir ’gyur ||&nbsp;</span><span id='7600636bi' class='paragraph'>
+						 dbyen gyi ’khor du gtogs pas na de ste dge ’dun thams cad kyis na dge ’dun thams cad kyaṅ ’das pa daṅ bcas par ’gyur ro ||&nbsp;</span><span id='7600637bi' class='paragraph'>
+						 (4) phyi rol na dge sloṅ ma’i dge ’dun phyogs daṅ phyogs ma yin pas gnas par gyur na de dag la zla ba phyed phyed ciṅ luṅ bstan pa stsal bar bgyi’am | dge sloṅ ma’i dge ’dun kyaṅ bye bar ’gyur gyis sbyin par bya’o ||&nbsp;</span><span id='7600638bi' class='paragraph'>
+						 yaṅs pa can gyi dge sloṅ ma rnams la luṅ bstan par (5) bgyi ba las de na kau śām bī yaṅ mchis par gyur na de dag las ji lta bur bstan par bgyi |&nbsp;</span><span id='7600639bi' class='paragraph'>
+						 mtshams kyi phyi rol du soṅ la bstan par bya’o ||&nbsp;</span><span id='8843294bi' class='generelltekst'>
+						  &nbsp;</span><div style='' id='20' class='note cn'>21.<a class="internt" name='N5510cn21' href='#FN5510cn21'> dge sloṅ ma yi DQ: dge sloṅ ma’i SV.</a>&nbsp; 22.<a class="internt" name='N5510cn22' href='#FN5510cn22'> de dag gi DQ: de dag SV.</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601359bi' class='paragraph'>
+							倶舍彌何時名破僧。&nbsp;</span><span id='7601360bi' class='paragraph'>
+						 答若倶舍彌比丘界内共一住處。別作布薩及諸羯磨。爾時名破僧。&nbsp;</span><span id='7601361bi' class='paragraph'>
+						 問倶舍彌誰名破衆僧。&nbsp;</span><span id='7601363bi' class='paragraph'>
+						 答如法比丘界内共住處。別作布薩及諸羯磨者是。&nbsp;</span><span id='7601365bi' class='paragraph'>
+						 &nbsp;</span><span id='7601366bi' class='paragraph'>
+						 問若比丘尼僧破爲二部。比丘尼來詣諸比丘求教化。諸比丘應與教化不。&nbsp;</span><span id='7601367bi' class='paragraph'>
+						 答應與。應作是言。諸姉善共和合。&nbsp;</span><span id='7601368bi' class='paragraph'>
+						 問二因縁故名破僧。一唱説。二者取籌。若以餘因縁唱説取籌。名破僧不。答不名破僧。&nbsp;</span><span id='8843281bi' class='generelltekst'>
+						 問若衆僧破爲二部。諸比丘尼來求教化。應教化不。答應與教化。何以故。不欲令比丘尼僧破故。&nbsp;</span><span id='7601369bi' class='paragraph'>
+						 &nbsp;</span><span id='7601370bi' class='paragraph'>
+						 &nbsp;</span><span id='7601371bi' class='paragraph'>
+						 &nbsp;</span><span id='7601372bi' class='paragraph'>
+						 問毘耶離比丘受比丘尼。求教化。若倶舍彌比丘。爾時在界内毘耶離比丘。云何。作教化&nbsp;</span><span id='7601373bi' class='paragraph'>
+						 答。應出界教化。&nbsp;</span><span id='8843296bi' class='generelltekst'>
+						 問倶舍彌二部朋黨。一布薩處集。闥頼吒比丘云何作布薩。答應出界作布薩説戒是。檀越捉上座手。布施衆僧。是施物應屬誰。答隨何部作上座。是物應屬。若檀越捉第一上座第二上座手言。是物施衆僧。應屬誰。答若第一上座第二上座同一部。應屬一部。第一上座第二上座。各在一部。應屬二部。云何應分。次第分。第四分與沙彌。問毘耶離比丘。就闥頼吒比丘。共作布薩説戒。得名布薩説戒不。答得。顯闥頼吒相故。若闥頼吒比丘。就毘耶離比丘。共作布薩説戒。得名布薩説戒不。答得布薩説戒。但失闥頼吒相故。問倶舍彌比丘。就
+闥頼吒比丘布薩説戒。得名布薩説戒不。答得顯闥頼吒相故。闥頼吒比丘。就倶舍彌比丘。共作布薩説戒。得名布薩説戒不。答得布薩説戒。但失闥頼吒相故。&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601726bi' class='paragraph'>
+							&nbsp;</span><span id='7601727bi' class='paragraph'>
+						 &nbsp;</span><span id='7601728bi' class='paragraph'>
+						 &nbsp;</span><span id='7601730bi' class='paragraph'>
+						 &nbsp;</span><span id='7601732bi' class='paragraph'>
+						 &nbsp;</span><span id='7601733bi' class='paragraph'>
+						 若比丘應與比丘尼求教誡欲。云何與教誡欲。&nbsp;</span><span id='7601734bi' class='paragraph'>
+						 語言姉妹等和合作布薩。&nbsp;</span><span id='7601735bi' class='paragraph'>
+						 &nbsp;</span><span id='8843282bi' class='generelltekst'>
+						 若作布薩。僧破建立爲二部。應與比丘尼教誡不。應與。&nbsp;</span><span id='7601736bi' class='paragraph'>
+						 &nbsp;</span><span id='7601737bi' class='paragraph'>
+						 &nbsp;</span><span id='7601738bi' class='paragraph'>
+						 &nbsp;</span><span id='7601739bi' class='paragraph'>
+						 應何處教誡。&nbsp;</span><span id='7601740bi' class='paragraph'>
+						 應出界外教誡。&nbsp;</span><span id='8843297bi' class='generelltekst'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600640bi' class='paragraph'>
+							mdor na |<br />gcig gis gcig la spaṅs pa daṅ ||<br />gñid kyis log nas spaṅs pa daṅ ||<br />gźan dag gis kyaṅ gaṅ zag (6) la||<br />tshul bźin du yaṅ ma byas pa’o ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601374bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601741bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600641bi' class='paragraph'>
+							btsun pa bcom ldan ’das kyis chos bźin ma yin pas byas la ma ’dus pa daṅ | chos bźin ma yin la ’dus pa daṅ | chos bźin ma yin pa daṅ ’dra ba la ’dus pa daṅ | chos bźin ma yin pa daṅ ’dra ba la ma ’dus (7) ba’o źes gsuṅs na | chos bźin ma yin par bgyis na ma ’dus pa gaṅ lags | &nbsp;</span><span id='7600642bi' class='paragraph'>
+						 bsdigs pa’i las bya bar rigs pa las spaṅs nas ma ’dus pa<a class='fotnote cn' name='FN5510cn23' href='#N5510cn23'><sup>23</sup></a>
+  ste | de ltar na chos bźin ma yin par byas la ma ’dus pa’o ||&nbsp;</span><span id='7600643bi' class='paragraph'>
+						 chos bźin ma yin pa la ’dus pa gaṅ źe na | &nbsp;</span><span id='7600644bi' class='paragraph'>
+						 (230b1) bsdigs pa’i las su rigs pa la spaṅs la ’dus par yaṅ gyur pa ste | de ltar na chos bźin ma yin pa la ’dus pa’o ||&nbsp;</span><span id='7600645bi' class='paragraph'>
+						 chos bźin ma yin pa daṅ ’dra ba la ma ’dus pa gaṅ źe na | &nbsp;</span><span id='7600646bi' class='paragraph'>
+						 spaṅ bar rigs pa la thog mar rjes su bsgrags te | de’i ’og tu gsol pa byas nas spaṅs (2) na de ni chos bźin ma yin pa daṅ ’dra ba la ma ’dus pa’o || &nbsp;</span><span id='7600647bi' class='paragraph'>
+						 chos bźin ma yin pa daṅ ’dra ba la ’dus pa gaṅ źe na | &nbsp;</span><span id='7600648bi' class='paragraph'>
+						 spaṅs par rigs pa la sṅar rjes su bsgrags te | de’i ’og tu gsol ba byas te spaṅs la ’dus bar yaṅ gyur pa ste | de ni chos bźin ma yin pa daṅ ’dra ba (3) la ’dus pa’o ||&nbsp;</span><span id='8843309bi' class='generelltekst'>
+						  &nbsp;</span><span id='7600649bi' class='paragraph'>
+						 chos bźin du ma ’dus pa gaṅ źe na | &nbsp;</span><span id='7600650bi' class='paragraph'>
+						 spaṅs par rigs pa spaṅs la ma ’dus par kyaṅ gyur pa ste | de ni chos bźin du ma ’dus pa’o ||&nbsp;</span><span id='8843304bi' class='generelltekst'>
+						  &nbsp;</span><span id='7600651bi' class='paragraph'>
+						 gcig gis gcig spaṅs na ñes byas su ’gyur ro ||&nbsp;</span><span id='7600652bi' class='paragraph'>
+						 gcig gis gñis sam maṅ po spaṅs nas bźi’i bar (4) ni bskor ciṅ bsdu bar bya’o || &nbsp;</span><span id='8843284bi' class='generelltekst'>
+						 bźis bźi spaṅs na dbyen gyi ’khor du gtogs pa’i ñes pa sbom por ’gyur ro ||&nbsp;</span><span id='7600654bi' class='paragraph'>
+						 dge ’dun thams cad gñid kyis log pa la dge sloṅ spaṅs na spaṅs pa źes bgyi’am | de ste gsol pa byas nas ñal te spaṅs na ni spaṅ pa źes bya’o || (5) de ste sṅar ñal la phyis gsol ba byas na spaṅs pa źes mi bya’o ||&nbsp;</span><span id='7600655bi' class='paragraph'>
+						 las gźan du bsgrags la gźan du spaṅs na spaṅs pa źes ni bya ste | dge ’dun thams cad kyis mi śes na dbyen gyi ’khor du gtogs pas las byed pa la ñes pa sbom por ’gyur ro || de ste dge (6) ’dun thams cad kyis śes na dge ’dun thams cad ’das pa daṅ bcas pa’o ||&nbsp;</span><span id='8843324bi' class='generelltekst'>
+						  &nbsp;</span><span id='7600658bi' class='paragraph'>
+						 dge sloṅ bźi pas ñuṅ bas spaṅs na spaṅs pa źes bgyi’am |&nbsp;</span><span id='8843319bi' class='generelltekst'>
+						 u pā li ma yin te | khyim pa nas de bźin gśegs pa la ṅan sems kyis khrag phyuṅ ba’i bar du de dag gis graṅs (7) su bskaṅ ste | dge sloṅ spaṅs na spaṅs pa źes mi bya’o ||&nbsp;</span><div style='' id='21' class='note cn'>23.<a class="internt" name='N5510cn23' href='#FN5510cn23'> ’dus pa DQV: ma ’dus pa S.</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601375bi' class='paragraph'>
+							如佛所説。有一住處。諸比丘作羯磨。非法別衆。非法和合衆。似法別衆。似法和合衆。如法別衆。如法和合衆。云何名非法別衆。&nbsp;</span><span id='7601376bi' class='paragraph'>
+						 答應與苦切羯磨。與作不見擯羯磨。僧不和合。是名非法別衆。&nbsp;</span><span id='7601377bi' class='paragraph'>
+						 云何名非法和合衆。&nbsp;</span><span id='7601378bi' class='paragraph'>
+						 答應與苦切羯磨。與作不見擯羯磨。僧和合。是名非法和合衆。&nbsp;</span><span id='7601379bi' class='paragraph'>
+						 &nbsp;</span><span id='7601380bi' class='paragraph'>
+						 &nbsp;</span><span id='7601381bi' class='paragraph'>
+						 云何名似法別衆。(different)&nbsp;</span><span id='7601382bi' class='paragraph'>
+						 答若作不見擯羯磨時。先唱説後白。僧不和合。是名似法別衆。&nbsp;</span><span id='8843311bi' class='generelltekst'>
+						 云何似法和合衆。答若作不見擯羯磨時。先唱説後白。僧和合。是名似法和合衆。&nbsp;</span><span id='7601383bi' class='paragraph'>
+						 云何名如法別衆。&nbsp;</span><span id='7601384bi' class='paragraph'>
+						 若應與作不見擯。與作不見擯羯磨。僧不和合。是名如法別衆&nbsp;</span><span id='8843306bi' class='generelltekst'>
+						 云何如法和合衆。答若應與作不見擯。與作不見擯羯磨。僧和合。是名如法和合衆。&nbsp;</span><span id='7601385bi' class='paragraph'>
+						 問若一比丘擯一人。一突吉羅。&nbsp;</span><span id='7601386bi' class='paragraph'>
+						 一人擯二人。二突吉羅。一人擯三人。三突吉羅。一人擯四人。 画像四突吉羅。二人擯二人。二突吉羅。二人擯三人。三突吉羅。二人擯四人。四突吉羅。二人擯一人。一突吉羅。三人擯三人。三突吉羅。三人擯四人。四突吉羅。三人擯一人。一突吉羅。三人擯二人。二突吉羅。&nbsp;</span><span id='8843286bi' class='generelltekst'>
+						 問若四比丘擯四比丘。得何罪。答得偸蘭遮罪。以破僧因縁故。&nbsp;</span><span id='7601388bi' class='paragraph'>
+						 問一切衆僧睡眠。爾時擯比丘。得擯不<br/>答若衆僧聞白已睡眠。得擯。&nbsp;</span><span id='7601389bi' class='paragraph'>
+						 &nbsp;</span><span id='8843326bi' class='generelltekst'>
+						 問若衆僧以餘因縁和合。即擯比丘。得名擯不。答曰。得擯。説羯磨者得罪。&nbsp;</span><span id='7601392bi' class='paragraph'>
+						 問若減四比丘擯人。得名擯不。&nbsp;</span><span id='8843321bi' class='generelltekst'>
+						 答不得。問若三比丘。第四若白衣。沙彌。非比丘。外道。不見擯。不作擯。惡邪不除擯。不共住。種種不共住。自言犯重罪。先來白衣。汚比丘尼。殺父母。殺阿羅漢。破僧。惡心出佛身血人。作第四人。得擯人不。答不得。&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601742bi' class='paragraph'>
+							如佛所説。非法不和合。非法和合。如法不和合。如法和合。云何非法不和合。&nbsp;</span><span id='7601743bi' class='paragraph'>
+						 應與苦切羯磨。與擯羯磨。僧復不和合。&nbsp;</span><span id='7601744bi' class='paragraph'>
+						 云何非法和合。&nbsp;</span><span id='7601745bi' class='paragraph'>
+						 應與苦切而與擯羯磨。衆僧和合。&nbsp;</span><span id='7601746bi' class='paragraph'>
+						 &nbsp;</span><span id='7601747bi' class='paragraph'>
+						 &nbsp;</span><span id='7601748bi' class='paragraph'>
+						 云何如法和合。(different)&nbsp;</span><span id='7601749bi' class='paragraph'>
+						 先作白。後作羯磨。僧和合與上相違。名法不和合。&nbsp;</span><span id='8843312bi' class='generelltekst'>
+						 &nbsp;</span><span id='7601750bi' class='paragraph'>
+						 &nbsp;</span><span id='7601751bi' class='paragraph'>
+						 &nbsp;</span><span id='8843307bi' class='generelltekst'>
+						 &nbsp;</span><span id='7601752bi' class='paragraph'>
+						 一比丘擯一人。衆多擯四人。犯突吉羅。&nbsp;</span><span id='7601753bi' class='paragraph'>
+						 &nbsp;</span><span id='8843287bi' class='generelltekst'>
+						 四人擯四人。犯偸羅遮。&nbsp;</span><span id='7601755bi' class='paragraph'>
+						 擯比丘時眠成擯不。<br/>若聞白已眠成擯。先眠後白。不成擯。&nbsp;</span><span id='7601756bi' class='paragraph'>
+						 應餘羯磨。出比丘罪。餘羯磨擯比丘。犯偸羅遮&nbsp;</span><span id='8843327bi' class='generelltekst'>
+						 &nbsp;</span><span id='7601759bi' class='paragraph'>
+						 &nbsp;</span><span id='8843322bi' class='generelltekst'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600659bi' class='paragraph'>
+							mdor na |<br />las la phyin daṅ bzlog pa daṅ ||<br />ñal ba sñoms par źugs pa daṅ ||<br />dge sloṅ gcig la bsgo ba daṅ ||<br />lṅa pos spaṅ bar mi bya’o ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601393bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601760bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600660bi' class='paragraph'>
+							btsun pa bcom ldan ’das kyis dge sloṅ ji (231a1) sñed las la phyin ciṅ mṅon du gyur la dad pa blaṅ bar rigs pa’i rnams la dad pa’aṅ blaṅs par gyur | gaṅ gis bzlog par byas na yaṅ bzlog par brtsan pa’i dge sloṅ dag kyaṅ mṅon sum du gyur la dgag pa’aṅ med | bzlog pa’aṅ med do || źes (2) gsuṅs na | dge sloṅ las la phyin pa ni gaṅ lags |&nbsp;</span><span id='7600662bi' class='paragraph'>
+						 dge sloṅ bźi ’dus nas las bya ba’i rigs pa la dge sloṅ yoṅs su dag pa thams cad la yaṅ mtshuṅs par gnas pa bźi tshogs pa ni las la phyin pa’i | dge sloṅ lṅa ’dus nas bya ba daṅ | bcu ’dus nas bya ba daṅ | (3) ñi śu ’dus nas bya ba rnams las la’aṅ phyin la dge sloṅ de dge kyaṅ yoṅs su dag pa lta ba mthun pa rnams tshogs pa ni las la phyin pa źes bya’o ||&nbsp;</span><span id='7600663bi' class='paragraph'>
+						 gaṅ la bzlog pa lags |&nbsp;</span><span id='7600664bi' class='paragraph'>
+						 gaṅ gis<a class='fotnote cn' name='FN5510cn24' href='#N5510cn24'><sup>24</sup></a>
+ bzlog pa brtsan pa ste sa la gnas pa la ni nam mkha’ la gnas pas bzlog pa mi brtsan no || (4) de bźin mtshams kyi phyi rol na ’dug pas mtshams kyi naṅ na ’dug pa la bzlog pa’aṅ mi brtsan no || de bźin mtshams kyi phyi rol na 'dug pas mtshams kyi naṅ na 'dug pa la bzlog pa'aṅ mi brtsan no || &nbsp;</span><span id='7600665bi' class='paragraph'>
+						 u pā li brtsan pa ni dge tshul bslab pa ston pa’i tshe bdag la bslab pa ma ston cig ces zer na de’i bzlog pa brtsan no || dge tshul bsñen par rdzogs par bya ba’i tshe bdag la (5) bsñen par rdzogs par ma byed cig ces zer na yaṅ de’i bzlog pa brtsan no || chad pas gcad pa la chad pa gcod pa’i tshe bdag chad pas ma gcod cig zer ba daṅ | de bźin du gźi nas bslaṅ ste yid mgu bar bya ba daṅ | dbyuṅ bar bya ba daṅ | de bźin du gaṅ zag bcu (6) gñis bsgo ba thams cad kyis kyaṅ bzlog par brtsan no ||&nbsp;</span><span id='7600669bi' class='paragraph'>
+						 ñal ba spaṅs pa źes bgyi’am |&nbsp;</span><span id='8843360bi' class='generelltekst'>
+						 de ste gsol ba thos nas ñal na spaṅs ba źes bya’o || de sṅar ñal la gsol ba phyis byas na ma spaṅs pa źes bya’o || sñoms pa la źugs pa yaṅ de bźin no || dge sloṅ gcig pu (7) źig gis bsgo na’aṅ bzlog pa źes bya’o ||&nbsp;</span><span id='7600673bi' class='paragraph'>
+						 dge 'dun bye ste phyogs daṅ phyogs ma yin par gnas pas phyogs gaṅ yaṅ ruṅ ba cig spaṅs pa na spaṅs pa źes bgyi’am | ma spaṅs pa źes bgyi |<a class='fotnote cn' name='FN5510cn25' href='#N5510cn25'><sup>25</sup></a>
+ 
+&nbsp;</span><span id='8843370bi' class='generelltekst'>
+						 gsuṅs pa | ma spaṅs pa źes bya’o ||&nbsp;</span><div style='' id='22' class='note cn'>24.<a class="internt" name='N5510cn24' href='#FN5510cn24'> gaṅ gi D: gaṅ gis QSV.</a>&nbsp; 25.<a class="internt" name='N5510cn25' href='#FN5510cn25'> bgyi D: bgyi’am | Q: bgyi | SV.</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601394bi' class='paragraph'>
+							問如佛所説。有一住處。諸比丘應作羯磨者。彼不集一處。應與欲而不與。現前比丘能遮者遮成遮。云何應作羯磨比丘。&nbsp;</span><span id='7601396bi' class='paragraph'>
+						 答若應四衆作羯磨。四比丘應作。若應五衆作羯磨者。五比丘應作。若十衆應作羯磨者。十比丘應作。若應二十衆作羯磨者。二十比丘應作。諸比丘清淨共住同見。是名應作羯磨比丘。&nbsp;</span><span id='7601397bi' class='paragraph'>
+						 &nbsp;</span><span id='7601398bi' class='paragraph'>
+						 &nbsp;</span><span id='7601399bi' class='paragraph'>
+						 &nbsp;</span><span id='7601403bi' class='paragraph'>
+						 問若比丘睡眠。諸比丘作擯。得擯不。&nbsp;</span><span id='8843362bi' class='generelltekst'>
+						 答若比丘聞白已睡眠。得名擯。問若入定比丘。諸比丘得擯不。答若是比丘聞白已入定。得名擯。&nbsp;</span><span id='7601407bi' class='paragraph'>
+						 問若衆僧破爲二部。互相擯。得擯不。&nbsp;</span><span id='8843372bi' class='generelltekst'>
+						 答若如法者擯。得名擯。&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601761bi' class='paragraph'>
+							若擯比丘時不來者。應取欲。云何到羯磨。&nbsp;</span><span id='7601763bi' class='paragraph'>
+						 四比丘清淨共住。乃至二十人亦如是。&nbsp;</span><span id='7601764bi' class='paragraph'>
+						 &nbsp;</span><span id='7601765bi' class='paragraph'>
+						 &nbsp;</span><span id='7601766bi' class='paragraph'>
+						 若沙彌欲與受具戒時。莫與我受戒。爲得戒不。得戒。式叉摩那沙彌尼亦如是。受具足戒時。別住時。本日時。摩那埵時。阿浮呵那時。十二人時。亦如是。&nbsp;</span><span id='7601770bi' class='paragraph'>
+						 僧擯眠人成擯不。&nbsp;</span><span id='8843363bi' class='generelltekst'>
+						 若聞白成擯。不聞不成擯。入滅盡定人亦如是。&nbsp;</span><span id='7601774bi' class='paragraph'>
+						 僧破各各相擯不。&nbsp;</span><span id='8843373bi' class='generelltekst'>
+						 成擯。&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600674bi' class='paragraph'>
+							mdor na |<br />gzu bos graṅs su bskaṅs (231b1) ba daṅ ||<br />chos min chos su bsgrags pa daṅ ||<br />dge ’dun dbus su bsgo ba daṅ ||<br />bcas pa rnam par bsgo ba’o ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601408bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601775bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600675bi' class='paragraph'>
+							gzu bos maṅ por bskaṅs te dge sloṅ gis spaṅs pa na<a class='fotnote cn' name='FN5510cn26' href='#N5510cn26'><sup>26</sup></a>
+ spaṅs pa źes bgyi’am | ma spaṅs pa źes bgyi | &nbsp;</span><span id='8843375bi' class='generelltekst'>
+						 gsuṅs pa | spaṅs pa źes ni bya ste gzu (2) bo'i dṅos po ni med par ’gyur ro ||&nbsp;</span><span id='7600676bi' class='paragraph'>
+						 gaṅ cuṅ zad chos bźin ma lags pa’i las de thams cad ma ’dus pa’i las sam | de ste gaṅ cuṅ zad ma ’dus pa’i las de thams cad chos bźin ma lags pa’i las źes bgyi’am | &nbsp;</span><span id='8843380bi' class='generelltekst'>
+						 u pā li ma yin te | chos bźin ma yin pa’i las (3) kyaṅ gźan la | ma ’dus pa’i las kyaṅ gźan no ||&nbsp;</span><span id='7600677bi' class='paragraph'>
+						 chos bźin ma yin pa’i las la ma ’dus pa’i las ma yin pa gaṅ źe na | &nbsp;</span><span id='7600678bi' class='paragraph'>
+						 gaṅ la bya ba de mṅon sum du ma gyur | gleṅs pa’aṅ med | dran par byas pa’aṅ gźan med dam ’char yaṅ ma bcug pa la byed pa daṅ | dge sloṅ ji sñed (4) pa kun las la phyin ciṅ ’dus nas mṅon sum du gyur | dad pa blaṅ ba’i rigs pa las dad pa yaṅ blaṅs nas gaṅ gis bzlog na bzlog pa la brtsan pa’i dge sloṅ rnams mṅon sum du gyur kyaṅ dgag par mi byed | zlog par mi byed pa ’di ni chos bźin ma yin pa’i las yin (5) la ma ’dus pa’i las ni ma yin pa’o ||&nbsp;</span><span id='7600679bi' class='paragraph'>
+						 ma ’dus pa’i las yin la chos bźin ma yin pa’i las ma yin pa gaṅ źe na | &nbsp;</span><span id='7600680bi' class='paragraph'>
+						 gaṅ la bya ba mṅon sum du gyur la gleṅs | dran par byas | dam ’char bcug nas byed pa daṅ | dge sloṅ ji sñed las la byin par byed pa de thams (6) cad kyaṅ ma ’dus | mṅon sum du ma gyur | dad pa blaṅ ba’i rigs pa las dad pa’aṅ ma blaṅs | dge sloṅ mṅon sum du gyur pa dag gis dgag pa daṅ bzlog pa’aṅ brtsan par gyur pa de ni ma ’dus pa’i las yin la chos bźin ma yin pa’i las ni ma byin no ||&nbsp;</span><span id='8843385bi' class='generelltekst'>
+						  &nbsp;</span><span id='7600682bi' class='paragraph'>
+						 gaṅ chos (7) bźin pa’i las de thams cad ’dus pa’i las lags sam |&nbsp;</span><span id='7600683bi' class='paragraph'>
+						  u pā li ma yin te | chos bźin gyi las gźan la ’dus pa’i las kyaṅ gźan no ||&nbsp;</span><span id='7600684bi' class='paragraph'>
+						 chos bźin gyi las lags la ’dus pa’i las ma lags pa gaṅ lags |&nbsp;</span><span id='8843390bi' class='generelltekst'>
+						 gsuṅs pa | de la mṅon sum du byed ciṅ gleṅs pa (232a1) daṅ | dge sloṅ ji sñed las la phyin par byed pa de thams cad ma ’dus mṅon sum du’aṅ ma gyur | dad pa blaṅ ba’i ba’i rigs pa’aṅ ma blaṅs | dge sloṅ gaṅ gis bzlog pa brtsan pa de dag kyaṅ mṅon sum du gyur ciṅ ’gog pa zlog pa ’di ni chos bźin gyi las (2) yin la ’dus pa’i las ma yin no ||&nbsp;</span><span id='7600685bi' class='paragraph'>
+						 ’dus pa’i las lags la chos bźin gyi las ma lags pa gaṅ lags |&nbsp;</span><span id='7600686bi' class='paragraph'>
+						 gsuṅs pa | mṅon sum du ma gyur bar de la byed ciṅ ma gleṅs | dran par ma byas | dṅos po ma yin | dam ’char ma bcug par byed pa daṅ | dge sloṅ ji (3) sñeṅ las la phyin par bya ba de thams cad ’dus śiṅ mṅon sum du gyur la dad pa blaṅ ba’i rigs pa las dad pa’aṅ blaṅs | dge sloṅ gaṅ mṅon sum du gyur na bzlog pa brtsan pa de dag kyaṅ mi ’gog mi zlog pa ’di ni ’dus pa’i las yin la chos bźin ma yin pa’i las so ||&nbsp;</span><span id='8843395bi' class='generelltekst'>
+						  &nbsp;</span><span id='7600688bi' class='paragraph'>
+						 gaṅ (4) su la dge ’dun gyi dbus su lan gsum gyi bar du bsgo na de thams cad noṅs par ’gyur ram |&nbsp;</span><span id='7600689bi' class='paragraph'>
+						 gsuṅs pa | ’gyur ba yaṅ yod | mi ’gyur ba yaṅ yod de | gaṅ la dge ’dun gyi dbus su lan gsum gyi bar du bsgo na de thams cad ñes par ’gyur ro ||&nbsp;</span><span id='7600690bi' class='paragraph'>
+						 noṅs par ’gyur (5) la dge ’dun gyi naṅ du lan gsum gyi bar du bsgo mi ’tshal ba mchis sam | &nbsp;</span><span id='8870160bi' class='generelltekst'>
+						 gsuṅs pa | bsgo ba rnams ma gtogs par ñes pa gźan byuṅ ba’o ||&nbsp;</span><span id='7600691bi' class='paragraph'>
+						 ji tsam gyis na tha ma gyur pa la yi dam brjod pa źes bgyi |&nbsp;</span><span id='7600692bi' class='paragraph'>
+						 gsuṅs pa | gaṅ la phas pham pa bźi las gaṅ yaṅ ruṅ (6) ñes pa byuṅ nas dge ’dun gyi dbus su lan gsum du khas len pa’i tha ma’i dṅos po la dam ’cha’ bar byed pa źes bya’o ||&nbsp;</span><span id='7600693bi' class='paragraph'>
+						 chad pas bcad pa’i bsgo ba de dge sloṅ gis spaṅs na spaṅs pa źes bgyi’am |&nbsp;</span><span id='7600694bi' class='paragraph'>
+						 gsuṅs pa | mṅon sum du gnas pa’i sdom pa ma gtogs par gźan (7) thams cad kyi las su byas pa źes bya’o || ||&nbsp;</span><div style='' id='23' class='note cn'>26.<a class="internt" name='N5510cn26' href='#FN5510cn26'> spaṅs pa DQ: spaṅs na SV.</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601409bi' class='paragraph'>
+							問以闥頼吒比丘足數擯比丘。得擯不。&nbsp;</span><span id='8843377bi' class='generelltekst'>
+						 答得擯。但失闥頼吒相。&nbsp;</span><span id='7601410bi' class='paragraph'>
+						 問所有非法羯磨。是別衆羯磨耶。所有別衆羯磨。是非法羯磨耶。&nbsp;</span><span id='8843382bi' class='generelltekst'>
+						 答或非法羯磨。非別衆。或別衆羯磨。非非法。或非法羯磨。亦是別衆。或非非法羯磨。亦非別衆。&nbsp;</span><span id='7601411bi' class='paragraph'>
+						 云何非法羯磨非別衆。&nbsp;</span><span id='7601412bi' class='paragraph'>
+						 答所有中作羯磨比丘。和合一處。應與欲者皆與欲來。現前比丘遮成遮而不遮。若人不現前。不先説其事。與作羯磨。是名非法羯磨非是別衆。&nbsp;</span><span id='7601413bi' class='paragraph'>
+						 云何別衆羯磨非非法。&nbsp;</span><span id='7601414bi' class='paragraph'>
+						 答所有中作羯磨比丘。不和合一處。應與欲者不與欲來現前比丘能遮者遮成遮。若人現前。先説其事與作羯磨。是別衆羯磨非非法。&nbsp;</span><span id='8843387bi' class='generelltekst'>
+						 云何非法羯磨亦別衆。答所有中作羯磨比丘。不和合一處。應與欲者不與欲來。現前比丘能遮者遮成遮。若人不現前。不先説其事。與作羯磨。是名非法羯磨亦別衆。<br/>云何非非法亦非別衆。答所有中作羯磨比丘和合一處。應與欲者皆與欲來。現3前比丘遮成遮而不遮。若人現前。先説其事與作羯磨。是名非非法亦非別衆。&nbsp;</span><span id='7601416bi' class='paragraph'>
+						 問所有是法羯磨。皆是和合耶。所有和合羯磨。皆是有法耶。&nbsp;</span><span id='7601417bi' class='paragraph'>
+						 答或是有法羯磨。非是和合。或是和合羯磨。非是有法。或有法羯磨。亦是和合。或非有法羯磨。亦非和合。&nbsp;</span><span id='7601418bi' class='paragraph'>
+						 云何有法羯磨非是和合。&nbsp;</span><span id='8843392bi' class='generelltekst'>
+						 答所有中作羯磨比丘不和合一處。應與欲者不與欲來。現前比丘遮成遮而遮。若人現前先説其事乃作羯磨。是名有法羯磨非是和合。&nbsp;</span><span id='7601419bi' class='paragraph'>
+						 云何和合非是有法羯磨。&nbsp;</span><span id='7601420bi' class='paragraph'>
+						 答所有中作羯磨比丘和合一處。應與欲者皆與欲來。現前比丘遮成遮而不遮。若人不現前。不先説其事。與作羯磨。是名和合非有法羯磨&nbsp;</span><span id='8843397bi' class='generelltekst'>
+						 云何有法羯磨亦和合。答所有中作羯磨比丘和合一處。應與欲者皆與欲來。現前比丘遮成遮而不遮。若人現前先説其事。與作羯磨。是名有法羯磨亦和合。<br/>云何非有法羯磨亦非和合。答所有中作羯磨比丘不和合一處。應與欲者不與欲來。現前比丘遮成遮而遮。若人不現前不先説其事。與作羯磨。是名非法羯磨亦非和合。&nbsp;</span><span id='7601422bi' class='paragraph'>
+						 問如佛所説。所有罪人。衆僧乃至三教勅。頗比丘無罪。衆僧乃至三教勅耶。(different a bit)&nbsp;</span><span id='7601423bi' class='paragraph'>
+						 &nbsp;</span><span id='7601424bi' class='paragraph'>
+						 &nbsp;</span><span id='8870162bi' class='generelltekst'>
+						 答若除諸罪。餘教勅是也。&nbsp;</span><span id='7601425bi' class='paragraph'>
+						 &nbsp;</span><span id='7601426bi' class='paragraph'>
+						 &nbsp;</span><span id='7601427bi' class='paragraph'>
+						 &nbsp;</span><span id='7601428bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601776bi' class='paragraph'>
+							&nbsp;</span><span id='8843378bi' class='generelltekst'>
+						 &nbsp;</span><span id='7601777bi' class='paragraph'>
+						 若非法羯磨。一切不和合羯磨耶。若不和合羯磨。一切非法羯磨耶 &nbsp;</span><span id='8843383bi' class='generelltekst'>
+						  (cf. see the previous record)&nbsp;</span><span id='7601778bi' class='paragraph'>
+						 云何和合非法羯磨。&nbsp;</span><span id='7601779bi' class='paragraph'>
+						 謂不現前擯比丘不出己罪。不使自言。不在界内而一切集不來者與欲。是和合非法羯磨&nbsp;</span><span id='7601780bi' class='paragraph'>
+						 云何如法羯磨非和合&nbsp;</span><span id='7601781bi' class='paragraph'>
+						 人現前。如前説。衆不和合。是如法羯磨非和合。&nbsp;</span><span id='8843388bi' class='generelltekst'>
+						 &nbsp;</span><span id='7601783bi' class='paragraph'>
+						 &nbsp;</span><span id='7601784bi' class='paragraph'>
+						 &nbsp;</span><span id='7601785bi' class='paragraph'>
+						 &nbsp;</span><span id='8843393bi' class='generelltekst'>
+						 &nbsp;</span><span id='7601786bi' class='paragraph'>
+						 &nbsp;</span><span id='7601787bi' class='paragraph'>
+						 &nbsp;</span><span id='8843398bi' class='generelltekst'>
+						 &nbsp;</span><span id='7601789bi' class='paragraph'>
+						 或僧中三唱。憶有罪不發露。一切犯罪耶。&nbsp;</span><span id='7601790bi' class='paragraph'>
+						 若三唱憶有罪不發露。一切犯罪。&nbsp;</span><span id='7601791bi' class='paragraph'>
+						 &nbsp;</span><span id='8870163bi' class='generelltekst'>
+						 若有僧中三問。自言非比丘。是自言非比丘波羅夷。亦如是。&nbsp;</span><span id='7601792bi' class='paragraph'>
+						 &nbsp;</span><span id='7601793bi' class='paragraph'>
+						 &nbsp;</span><span id='7601794bi' class='paragraph'>
+						 別住人擯比丘。成擯不。&nbsp;</span><span id='7601795bi' class='paragraph'>
+						 成擯。唯除受戒羯磨。餘羯磨盡得作。&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600695bi' class='paragraph'>
+							’dul ba gźuṅ dam pa | bam po bźi bcu rtsa bdun pa |&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601429bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601796bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600696bi' class='paragraph'>
+							mdor na |<br />daṅ por rjes su bsgo ba daṅ ||<br />dad pa bdag ñid yi dam ’cha’ ||<br />bźi la bslab pa sbyin pa daṅ ||<br />tshul śiṅ len par byas pa daṅ ||<br />so sor (232b1) gnas pa tha ma’o ||&nbsp;</span><span id='8870165bi' class='generelltekst'>
+						  &nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601430bi' class='paragraph'>
+							&nbsp;</span><span id='8870167bi' class='generelltekst'>
+						 問宿白僧中得作羯磨不。<br/>答除屬和上尼羯磨若僧未起。得作一切羯磨。&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601797bi' class='paragraph'>
+							&nbsp;</span><span id='8870168bi' class='generelltekst'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600697bi' class='paragraph'>
+							las sṅar bsgo nas phyis gsol ba bgyis na dge sloṅ spaṅs pa źes bgyi’am | ma spaṅs pa źes bgyi | ma spaṅs pa źes bya’o ||&nbsp;</span><span id='7600698bi' class='paragraph'>
+						 chad pa bgyid pa la cir ’gyur | &nbsp;</span><span id='7600699bi' class='paragraph'>
+						 de ste dge ’dun thams cad mi śes na dbyen gyi ’khor du gtogs pas ñes pa sbom (2) po’o || de ste dge ’dun thams cad kyis śes na dge ’dun thams cad la’aṅ ’das pa daṅ bcas par ’gyur ro ||&nbsp;</span><span id='7600700bi' class='paragraph'>
+						 chad pa bgyis pas dad pa blaṅs te dge sloṅ la spaṅs na spaṅs pa źes bgyi’am |&nbsp;</span><span id='8870170bi' class='generelltekst'>
+						 ñe g-yog gi sdom pa ma gtogs te | las thams cad byas pa źes (3) bya’o ||&nbsp;</span><span id='7600701bi' class='paragraph'>
+						 bdag ñid la las bgyid na bgyis pa źes bgyi’am | &nbsp;</span><span id='7600702bi' class='paragraph'>
+						 de ste dogs pa med na byas pa źes bya’o || de ste dogs pa yod na ma byas pa źes bya’o || bdag ñid la slar las byed pa ni ’di rnams te | bdag ñid la chad pa’i las byas nas bdag ñid la bdag ñid kyis bzod pa (4) gsol pa’o ||&nbsp;</span><span id='8870180bi' class='generelltekst'>
+						  &nbsp;</span><span id='7600704bi' class='paragraph'>
+						 btsun pa gaṅ la bsdigs pa’i las bgyid pa daṅ | bskrad par bgyis pa de dag la chos bźin du yi dam ’cha’ stsal pa de dag kyaṅ dge ’dun gyi naṅ du lan gsum gyi bar du khas blaṅs la bslab pa stsal ba’i rigs pa bźi la bsgrags pa gcig gis bslab pa stsal bar (5) ruṅ ṅam | bcom ldan ’das kyis bka’ stsal pa | u pā li mi ruṅ ṅo ||&nbsp;</span><span id='7600705bi' class='paragraph'>
+						 bsgrags pa gcig gis bźi bsñen par rdzogs par ruṅ ṅam | u pā li mi ruṅ ṅo ||&nbsp;</span><span id='7600706bi' class='paragraph'>
+						 tshul śiṅ ’bri ma daṅ bźis dge sloṅ la spaṅs pa źes bgyi’am | ma spaṅs pa źes bya’o ||&nbsp;</span><span id='8870190bi' class='generelltekst'>
+						 &nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601431bi' class='paragraph'>
+							問諸比丘唱説。後向擯比丘説。得名擯不。答得名擯。作羯磨人得突吉羅。(different from Tib.)&nbsp;</span><span id='7601432bi' class='paragraph'>
+						 &nbsp;</span><span id='7601433bi' class='paragraph'>
+						 &nbsp;</span><span id='7601434bi' class='paragraph'>
+						 問諸比丘因宿與欲作諸羯磨。得名作耶。&nbsp;</span><span id='8870172bi' class='generelltekst'>
+						 答除屬和上尼羯磨若僧未起。得作一切羯磨。&nbsp;</span><span id='7601435bi' class='paragraph'>
+						 問比丘自爲作羯磨。得作不。&nbsp;</span><span id='7601436bi' class='paragraph'>
+						 答不得。若作者。衆僧應語是人言。汝自順自受持。(different from Tib.)&nbsp;</span><span id='8870182bi' class='generelltekst'>
+						 優波離問佛。是諸本破戒人。賊住比丘。先來白衣等。是人云何如法自言。答是人僧中乃至三自説是。&nbsp;</span><span id='7601438bi' class='paragraph'>
+						 &nbsp;</span><span id='7601439bi' class='paragraph'>
+						 問可得一時唱説四人令得戒耶。答不得。問可得一時唱説令四人受具戒耶答不得。&nbsp;</span><span id='7601440bi' class='paragraph'>
+						 問三比丘第四籌擯比丘。得擯不。答不得。&nbsp;</span><span id='8870192bi' class='generelltekst'>
+						 問第四別住比丘擯比丘。得擯不。答不得。&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601798bi' class='paragraph'>
+							先白衆僧擯比丘。成擯不。成擯。(different from Tib.)&nbsp;</span><span id='7601799bi' class='paragraph'>
+						 &nbsp;</span><span id='7601800bi' class='paragraph'>
+						 若一若僧不知而擯比丘。犯偸羅遮。(???, What are first two characters?)&nbsp;</span><span id='7601801bi' class='paragraph'>
+						 &nbsp;</span><span id='8870173bi' class='generelltekst'>
+						 &nbsp;</span><span id='7601802bi' class='paragraph'>
+						 &nbsp;</span><span id='7601803bi' class='paragraph'>
+						 &nbsp;</span><span id='8870183bi' class='generelltekst'>
+						 彼罰比丘下調伏應捨不。應捨。&nbsp;</span><span id='7601805bi' class='paragraph'>
+						 &nbsp;</span><span id='7601806bi' class='paragraph'>
+						 一語與二人受戒。得戒不。不得戒。一語與四人受戒。得戒不。不得戒。&nbsp;</span><span id='7601807bi' class='paragraph'>
+						 受欲滿四人擯比丘。成擯不。不成擯。賊住滿衆亦如是&nbsp;</span><span id='8870193bi' class='generelltekst'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600707bi' class='paragraph'>
+							(6) mdor na |<br />bsdigs pa spaṅs pa’i dge sloṅ daṅ ||<br />dbyen byed gcig pu ma gtogs te ||<br />bsdigs pa źes bya ci yi don ||<br />lhag par ñe bar brtag pa’o ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601441bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601808bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600708bi' class='paragraph'>
+							bsdigs pa’i las bgyis pa la smad pa’i las bgyis na bgyis pa źes bgyi’am | &nbsp;</span><span id='8870195bi' class='generelltekst'>
+						 bsdigs pa’i las ni med (7) par ’gyur ro ||&nbsp;</span><span id='7600709bi' class='paragraph'>
+						 bsdigs pa’i las bgyis pa la bskrad pa daṅ | slar bsdu ba’i las bgyid pa źes bgyi’am ma bgyis pa źes bgyi | &nbsp;</span><span id='7600710bi' class='paragraph'>
+						 gsuṅs pa | byas pa ni yin mod kyi bsdigs pa ni med par ’gyur ro || ji ltar bsdigs pa’i las byas pa de bźin du smad pa’i (233a1) las byas pa daṅ | bskrad pa’i las byas pa daṅ | slar bsdu ba’i las byas pa la ’di rgyas par te | rnam pa bźir bskor bar brjod par bya’o ||&nbsp;</span><span id='7600711bi' class='paragraph'>
+						 spaṅs pa la bsdigs pa’i las bgyid na bgyis pa źes bgyi’am | &nbsp;</span><span id='8870205bi' class='generelltekst'>
+						 u pā li ma yin te | (2) de ni mtshuṅs par spyod pa ma yin pa’i phyir ro ||&nbsp;</span><span id='7600712bi' class='paragraph'>
+						 de bźin du smad pa daṅ bskad pa daṅ | slar bsdu ba’i las bgyid pa de dag bgyis pa źes bgyi’am |&nbsp;</span><span id='7600714bi' class='paragraph'>
+						 u pā li ma yin te | de ni<a class='fotnote cn' name='FN5510cn27' href='#N5510cn27'><sup>27</sup></a>
+  mtshuṅs par spyad pa ma yin pa’i phyir ro || dge sloṅ dag ma gtogs par gźan la | (3) dbyen byas pa ni ñes byas su ’gyur ro || &nbsp;</span><span id='7600716bi' class='paragraph'>
+						 bsdigs pa źes bgyi ba’i don ji lta bu | &nbsp;</span><span id='8900310bi' class='generelltekst'>
+						 u pā li de ni miṅ tsam mod kyi | dge sloṅ gaṅ thab mo can du gyur pa de la khyod nam thab mo de las slar log par ma gyur pa de’i bar du khyod la dge ’dun gyis phyi phyir ñe bar rtog go źes (4) bsgo ba’o ||&nbsp;</span><span id='7600717bi' class='paragraph'>
+						 smad pa źes bya ba’i don ci lags | &nbsp;</span><span id='7600718bi' class='paragraph'>
+						 u pā li smad pa źes pa de ni miṅ tsam mod kyi | dge sloṅ gaṅ phyi phyir dge ’dun gyi lhag ma’i ltuṅ bar gyur pa la khyod kyis nam phyi phyir ltuṅ ba de las slar ma log pa de’i bar du gnas ’cha’ źiṅ ’dug śig (5) ces bsgo ba’o ||&nbsp;</span><span id='7600719bi' class='paragraph'>
+						 bskrad do źes bgyi ba’i don ci lags | &nbsp;</span><span id='8900315bi' class='generelltekst'>
+						 u pā li bskrad do źes bya ba ni miṅ tsam mod kyi | dge sloṅ gaṅ gis rigs sun par gyur pa ste | de gnas de na ma ’dug śig ces bsgo ba’o ||&nbsp;</span><span id='7600720bi' class='paragraph'>
+						 slar bsdu ba źes bgyi ba’i don ci lags | &nbsp;</span><span id='8900320bi' class='generelltekst'>
+						 u pā (6) le de ni miṅ tsam mod kyi dge sloṅ gaṅ khyim pa la dpyas pa de la khyod khyim bdag de la bzod par gsol cig ces bsgo ba’o ||&nbsp;</span><span id='7600721bi' class='paragraph'>
+						 khyod la dge ’dun gyis phyi phyir ñe bar rtog par ’gyur ro źes gsuṅs na gsuṅs pa de’i don ci lags |&nbsp;</span><span id='7600722bi' class='paragraph'>
+						 gsuṅs pa | khyod kyi ltuṅ pa (7) gaṅ byuṅ ba de la dge ’dun gyis chos bźin du las byed du ’jug go źes bya ba’o ||&nbsp;</span><span id='7600723bi' class='paragraph'>
+						 khyod kyis gźan la gnas śig ces gsuṅs na de’i don ci lags | &nbsp;</span><div style='' id='24' class='note cn'>27.<a class="internt" name='N5510cn27' href='#FN5510cn27'> da ni D: de ni QSV.</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601442bi' class='paragraph'>
+							問諸比丘擯折伏。得擯不。&nbsp;</span><span id='8870197bi' class='generelltekst'>
+						 答得擯。先折伏羯磨得滅。&nbsp;</span><span id='7601443bi' class='paragraph'>
+						 問諸比丘得擯可依止比丘。可出懺悔比丘不耶。(different)&nbsp;</span><span id='7601444bi' class='paragraph'>
+						 答得擯。先可依止可出懺悔羯磨得滅。&nbsp;</span><span id='7601445bi' class='paragraph'>
+						 問諸比丘。與已擯比丘作折伏羯磨。名作不。&nbsp;</span><span id='8870207bi' class='generelltekst'>
+						 答不得。以不中同事故。&nbsp;</span><span id='7601446bi' class='paragraph'>
+						 問諸比丘。與擯比丘作依止遣出懺悔羯磨。得名作不。&nbsp;</span><span id='7601448bi' class='paragraph'>
+						 答不得。以不中同事故。問除比丘。讒餘人得何罪。答得突吉羅&nbsp;</span><span id='7601450bi' class='paragraph'>
+						 優波離問佛。折伏羯磨有何義耶。&nbsp;</span><span id='8900312bi' class='generelltekst'>
+						 佛言。此是羯磨名字。是籌磨從鬪諍相言邊出。應語是人衆僧後當籌量汝事。&nbsp;</span><span id='7601451bi' class='paragraph'>
+						 又問。世尊。依止羯磨有何義。&nbsp;</span><span id='7601452bi' class='paragraph'>
+						 答此是羯磨名字。是但數作衆罪。衆僧應語是人。汝當依止某甲比丘住。&nbsp;</span><span id='7601453bi' class='paragraph'>
+						 問世尊。驅出羯磨有何義。&nbsp;</span><span id='8900317bi' class='generelltekst'>
+						 答此是羯磨名字。是羯磨汚他家比丘邊出。應語是人。 汝出去。莫是中住。&nbsp;</span><span id='7601454bi' class='paragraph'>
+						 優波離問佛。破慢羯磨有何義。&nbsp;</span><span id='8900322bi' class='generelltekst'>
+						 答此是羯磨名字。是羯磨從輕罵白衣邊出。應語是人。汝應向某甲居士悔過。&nbsp;</span><span id='7601455bi' class='paragraph'>
+						 優波離問。如佛所説。汝應依止某甲比丘住。此説有何義。佛言。隨是罪比丘深心愛念恭敬者畏難者應依止是比丘住<br/>問如佛所説。衆僧後當籌量。此説有何義。答應語言。汝若有罪。應入僧中三自首。僧當隨罪治汝。是名籌量。<a class='fotnote cn' name='FN5512cn5' href='#N5512cn5'><sup>5</sup></a>
+ 
+
+ &nbsp;</span><span id='7601456bi' class='paragraph'>
+						 See the previous record&nbsp;</span><span id='7601457bi' class='paragraph'>
+						 See the previous record (two records ahead)&nbsp;</span><div style='' id='25' class='note cn'>5.<a class="internt" name='N5512cn5' href='#FN5512cn5'> The order of the question and answer is different from the Tibetan version.</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601809bi' class='paragraph'>
+							&nbsp;</span><span id='8870198bi' class='generelltekst'>
+						 &nbsp;</span><span id='7601810bi' class='paragraph'>
+						 應作苦切羯磨而作驅出羯磨。成作不。&nbsp;</span><span id='7601811bi' class='paragraph'>
+						 成作。捨苦切羯磨。即捨驅出羯磨。&nbsp;</span><span id='7601812bi' class='paragraph'>
+						 苦切羯磨。擯比丘成擯不。&nbsp;</span><span id='8870208bi' class='generelltekst'>
+						 成擯。&nbsp;</span><span id='7601813bi' class='paragraph'>
+						 &nbsp;</span><span id='7601815bi' class='paragraph'>
+						 &nbsp;</span><span id='7601817bi' class='paragraph'>
+						 See the next record &nbsp;</span><span id='8900313bi' class='generelltekst'>
+						 See the next record&nbsp;</span><span id='7601818bi' class='paragraph'>
+						  &nbsp;</span><span id='7601819bi' class='paragraph'>
+						 &nbsp;</span><span id='7601820bi' class='paragraph'>
+						 驅出羯磨有何義。謂比丘常犯戒。不止不與依止。<br/>苦切羯磨有何義。若比丘鬪諍不止。衆僧語言。若不止者。更加汝重罪。<a class='fotnote cn' name='FN5513cn4' href='#N5513cn4'><sup>4</sup></a>
+&nbsp;</span><span id='8900318bi' class='generelltekst'>
+						 See the previous record &nbsp;</span><span id='7601821bi' class='paragraph'>
+						 擯羯磨有何義。&nbsp;</span><span id='8900323bi' class='generelltekst'>
+						 若比丘汚他家不得住。&nbsp;</span><span id='7601822bi' class='paragraph'>
+						 &nbsp;</span><span id='7601823bi' class='paragraph'>
+						 &nbsp;</span><span id='7601824bi' class='paragraph'>
+						 &nbsp;</span><div style='' id='26' class='note cn'>4.<a class="internt" name='N5513cn4' href='#FN5513cn4'> the tarjanīyakarman (苦切羯磨) appears after the Nigarhaṇīyakarman (驅出羯磨), and the nigarhaṇīyakarman does not appear in T1441.</a>&nbsp; </div><div class='clear'></div></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='8900325bi' class='generelltekst'>
+							gsuṅs pa | gaṅ zag gaṅ la mdza’ ba’am | bla mar byed pa’am | ṅo tsha ba’am | (233b1) khrel ba ’byuṅ bar gyur pa de la gnas brtan par bya’o ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='8900327bi' class='generelltekst'>
+							See the previous record (three records ahead) &nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='8900328bi' class='generelltekst'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600724bi' class='paragraph'>
+							mdor na |<br />źar ba ma yin źar źes smra ||<br />dge sloṅ gnod pa ltuṅ ba daṅ ||<br />naṅ ṅam de ste phyi yaṅ ruṅ ||<br />bar chad dag tu gyur pa’o ||&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601458bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601825bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600725bi' class='paragraph'>
+							źar ba ma yin pa la źar ba źes smras na cir ’gyur | &nbsp;</span><span id='7600726bi' class='paragraph'>
+						 (2) śes bźin pa’i brdzun smras pas ltuṅ ba’o || źar ba la źar źes smras na mi’i skyon smras pas ltuṅ bar ’gyur ro ||&nbsp;</span><span id='7600727bi' class='paragraph'>
+						 dge sloṅ la gnod pa ni naṅ ṅam phyi’o źes gsuṅs na naṅ ni gaṅ | phyi ni gaṅ | &nbsp;</span><span id='7600728bi' class='paragraph'>
+						 mtshams kyi naṅ ni naṅ ṅo || mtshams kyi phyi rol ni phyi rol (3) lo || gcig tu na yaṅ gtsug lag khag gi nag ni naṅ ṅo || bla gab med pa ni phyi rol lo ||&nbsp;</span><span id='7600731bi' class='paragraph'>
+						 rnam graṅs du mar bar du gcod pa’o źes bcom ldan ’das kyis gsuṅs pa bar du gcod pa’i chos de gaṅ lags | &nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601459bi' class='paragraph'>
+							問若比丘語兩眼人言。汝是一眼人。得何罪。&nbsp;</span><span id='7601460bi' class='paragraph'>
+						 答故妄語故。得波逸提。 又問。語一眼人言。汝一眼人。得何罪。答輕惱他故。得波逸提。&nbsp;</span><span id='7601461bi' class='paragraph'>
+						 問如佛所説。比丘若内若外輕惱他。是中云何内云何外。&nbsp;</span><span id='7601462bi' class='paragraph'>
+						 答内者=界内外者界外。復次舍内名内。露地名外。&nbsp;</span><span id='7601465bi' class='paragraph'>
+						 問如佛所説。阿利吒比丘。竭馱婆羅門本弟子。説遮道法作不遮道。問云何是遮道。&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601826bi' class='paragraph'>
+							&nbsp;</span><span id='7601827bi' class='paragraph'>
+						 &nbsp;</span><span id='7601828bi' class='paragraph'>
+						 &nbsp;</span><span id='7601829bi' class='paragraph'>
+						 &nbsp;</span><span id='7601832bi' class='paragraph'>
+						 &nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='8900330bi' class='generelltekst'>
+							’dod pa<a class='fotnote cn' name='FN5510cn28' href='#N5510cn28'><sup>28</sup></a>
+  ni bar du gcod pa’i chos te | u (4) pā li ’dod pa ni bar du gcod pa’i chos su ṅas gsuṅs so ||&nbsp;</span><div style='' id='27' class='note cn'>28.<a class="internt" name='N5510cn28' href='#FN5510cn28'> 'dod pha D (simple error): 'dod pa QSV.</a>&nbsp; </div><div class='clear'></div></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='8900332bi' class='generelltekst'>
+							答我説欲是遮道&nbsp;</span></div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='8900333bi' class='generelltekst'>
+							&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'><div class='Tibetan'><span id='7600732bi' class='paragraph'>
+							’dul ba gźud dam pa ma na bi ka źes bya ba’i ’dul ba’i rim pa rdzogs so || ||&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "7600366";
+							kilderef = "Māṇ Kj ’dul ba pa  - Kj ’dul ba pa 233b4";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601466bi' class='paragraph'>
+							問雜事竟
+<br/>十誦律卷第五十五&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "7601100";
+							kilderef = "Māṇ T 1435, Puṇyatara & Kumārajīva 5CE  405a21 - T 1435, Puṇyatara & Kumārajīva 5CE 409c19";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:32.333333333333%;'><div class='Chinese'><span id='7601833bi' class='paragraph'>
+							&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "7601467";
+							kilderef = "Māṇ T 1441, Saṅghavarman, 5CE 605a11-12 - T 1441, Saṅghavarman, 5CE ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:32.333333333333%;'></div><div class='textvar' style='width:32.333333333333%;'></div><div class='textvar' style='width:32.333333333333%;'></div></div><div class='clear'></div><div class="fontboks"><a onClick=onOffdiv('permlink') name="permlink" href="#permlink">Permanent link</a></div><div class='clear'></div><div class='perm_felt' id='permlink'>http://www2.hf.uio.no/common/apps/permlink/permlink.php?app=polyglotta&amp;context=ctext&amp;uid=cae4e2f5-e6a2-11e3-942f-001cc4ddf0f4</div></div></div><!-- infofelt --></div><!-- divControl --><div class="clear"></div>
+<div style="clear:both"></div><div class="signatur"><div class="signatur_left">
+		<a href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation">Go to Wiki Documentation</a></br>Enhet: <a HREF=http://www.hf.uio.no>Det humanistiske fakultet</a> &nbsp; Utviklet av: <a href="http://www.hf.uio.no/tjenester/it">IT-seksjonen ved HF</a></div><!--signatur_left -->
+		<div class="signatur_right"><a href="/polyglotta/admin/index.php">Login</a></div>
+		<div style="clear:both"></div></div>
+</body></html><SCRIPT LANGUAGE="JAVASCRIPT">
+	
+	$("#tr_IA").click(function(){
+	    if ($("#toggle_container_IA").is(':hidden'))
+	    	$("#toggle_container_IA").show();
+	    else{
+	        $("#toggle_container_IA").hide();
+	    }
+	    return false;
+		});
+
+	$("#tr_lang").click(function(){
+	    if ($("#toggle_container_lan").is(':hidden'))
+	    	$("#toggle_container_lan").show();
+	    else{
+	        $("#toggle_container_lan").hide();
+	    }
+	    return false;
+	});
+
+	$("#tr_img").click(function(){
+	    if ($("#toggle_container_img").is(':hidden'))
+	    	$("#toggle_container_img").show();
+	    else{
+	        $("#toggle_container_img").hide();
+	    }
+	    return false;
+	});
+
+	$("#diac2button").click(function(){
+	   if ($("#ex3a").is(':hidden')){
+		   $("#ex3a").show();
+	       $("#diac2button").html("Hide&#32Diacritica-help");
+	   }else{
+	       $("#ex3a").hide();
+	       $("#diac2button").html("Diacritica-help");
+	   }
+	   return false;
+	});
+
+	$("#diacbutton").click(function(){
+	   if ($("#diacritical_sign").is(':hidden')){
+		   	$("#diacritical_sign").show();
+	      	$("#diacbutton").html("Hide&#32diacritica");
+	   }else{
+	        $("#diacritical_sign").hide();
+	        $("#diacbutton").html("Diacritica");
+	   }
+	   return false;
+    });
+
+	$('#toggle_container_IA').click(function(e) {
+	   e.stopPropagation();
+	});
+
+	$('#toggle_container_lan').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#toggle_container_img').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#ex3a').click(function(e) {
+	    e.stopPropagation();
+	});
+
+	$('#diacritical_sign').click(function(e) {
+        e.stopPropagation();
+    });
+
+	//Kode for å sette inn diakritiske tegn
+	$('#diacritical > tbody > tr > td').click(function() {
+	  	//alert('red');
+		$("#sokeboks").val($("#sokeboks").val() + $(this).text());
+	});
+
+	$('.diac2button').text(($('.diacbutton').text() == 'Diacritica-help') ? 'Hide Diacritica-help' : 'Diacritica-help');
+	
+	//Lukker alle åpnede pop'uper ved klikk på siden
+	$(document).click(function() {
+		$('#toggle_container_IA').hide();
+	    
+        $('#toggle_container_lan').hide();
+    
+        $('#toggle_container_img').hide();
+   
+   		$('#diacritical_sign').hide();
+   		$("#diacbutton").html("Diacritica");
+   
+       	$('#ex3a').hide();
+       	$("#diac2button").html("Diacritica-help");
+   });
+	</SCRIPT>
